@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>PODATKOVNI TIPI (7)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>PODATKOVNI TIPI SPREMENLJIVK (7)
+<p><em><font color="red">Z jokom pridemo na svet in z jokom z njega odhajamo.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>PODATKOVNI TIPI SPREMENLJIVK</big>
+</center>
+
+<ol type="1">
+	<li>Razlikujemo osem osnovnih podatkovnih tipov spremenljivk:
+	<ol type="1">
+	<li>Podatkovni tip "byte" je osembitno celo število s predznakom. Obsega vrednosti od -128 do +127. Ta podatkovni tip je priporočljiv za shranjevaje podatkov v velikih tabelah ali poljih, kjer je varčevanje s pomnilniškim prostorom še posebej pomembno.
+	<li>Podatkovni tip "short" je šestnajstbitno celo število s predznakom. Obsega vrednosti od -32.768 do +32.767. Tudi ta tip podatkov uporabimo pri velikih tabelah ali poljih, kjer je varčevanje s pomnilniškim prostorom zares pomembno.
+	<li>Podatkovni tip "integer" je dvaintridesetbitno celo število s predznakom. Obsega vrednosti od -2.147.483.648 do +2.147.483.647. Običajno je v programih ta podatkovni tip privzet za cela števila. Ta podatkovni tip premore dovolj velik obseg za veliko večino primerov, na katere lahko pri svojem delu naletimo. Če bomo morda delali z večjimi števili kot 2.147.483.647, moramo uporabiti podatkovni tip "long"
+	<li>Podatkovni tip "long" je štiriinšestdesetbitno celo število s predznakom. Obsega vrednosti od -9.223.372.036.854.775.808 do +9.223.372.036.854.775.807. Ta tip podatkov uporabljamo samo za resnično ogromna števila, katerih vrednosti presegajo obseg podatkovnega tipa "integer".
+	<li>Podatkovni tip "float" uporabimo za napovedovanje ali deklariranje decimalnih števil, kjer natančnost ni tako zelo pomembna. Ta podatkovni tip je priporočljiv za shranjevaje podatkov v velikih tabelah ali poljih, kjer je varčevanje s pomnilniškim prostorom še posebej pomembno. Tega tipa podatkov nikoli ne smemo uporabiti za natančno računanje, denimo pri računanju denarnih zneskov.
+	<li>Podatkovni tip "double" uporabimo za napovedovanje ali deklariranje decimalnih števil. To je običajno tudi privzeti tip podatkov za decimalna števila. Tega tipa podatkov nikoli ne smemo uporabiti za natančno računanje, denimo pri računanju denarnih zneskov. Za take račune uporabljamo druge tipe podatkov oziroma razrede.
+	<li>Podatkovni tip "boolean" premore dve vrednosti spremenljivke: "true" (resnično ali pravilno) in "false" (neresnično ali napačno). Ta tip spremenljivke uporabljamo pri programiranju za preverjanje in označevanje izpolnitve postavljenih pogojev v krmilnih pogojnih stavkih. Ta tip podatka vsebuje en bit informacije.
+	<li>Podatkovni tip "char" je en sam znak. Lahko je črka, številka ali katerikoli drugi posebni znak, ki ga premore tipkovnica.
+	</ol>
+</ol>
+
+<big>VAJA 7: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši program "PodatkovniTipi".</br></br><IMG SRC="07prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="07koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek07.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek07.java" prevedi.
+		<li>Pri prevajanju bo prevajalnik našel v izvorni kodi dve napaki. Poskusi ju najti in ju odpravi. Pri iskanju napak si lahko pomagaš s sliko izpisa rezultatov tega programčka.</br></br><IMG SRC="07prog02.jpg" ALT="?" BORDER=1></br></br>
+		<li>Prevedeno datoteko zaženi, preveri rezultat v oknu za interaktivno delo in pokliči profesorja, da vidi rezultat.
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Koliko bitov premore število podatkovnega tipa "byte"?<br>
+2. Koliko bitov premore število podatkovnega tipa "short"?<br>
+3. Koliko bitov premore število podatkovnega tipa "integer"?<br>
+4. Koliko bitov premore število podatkovnega tipa "long"?<br>
+5. Kateri podatkovni tipi so namenjeni shranjevanju celih števil?<br>
+6. Kateri podatkovni tipi so namenjeni shranjevanju decimalnih števil? <br>
+7. Koliko različnih vrednosti lahko zavzame spremenljivka podatkovvnega tipa "boolean"?<br>
+8. Katere podatkovne tipe uporabimo, če želimo ravnati varčno s pomnilniškim prostorom?<br>
+9. Opiši vzrok prve od dveh (predvidenih) napak pri prevajanju in njeno rešitev.<br>
+10. Opiši vzrok druge od dveh (predvidenih) napak pri prevajanju in njeno rešitev.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/index.html#h2_4">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/datatypes.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

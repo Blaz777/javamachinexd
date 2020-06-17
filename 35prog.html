@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>ZGRADBA DIAGRAMA POTEKA (35)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>ELEMENTI DIAGRAMA POTEKA (35)
+<p><em><font color="red">Naglica je sestra kesanja.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>ELEMENTI DIAGRAMA POTEKA</big>
+</center>
+
+<ol type="1">
+	<li>Diagram poteka je grafični način opisovanja algotritma.
+	<li>Grafični način je način s pomočjo risbe.
+	<li>V diagramu poteka najdemo torej simbole posameznih operacij, ki jih mora izvesti algoritem.
+	<li>Vrste simbolov v diagramu poteka so:
+	<ol type="1">
+		<li>simbol za začetek in konec diagrama poteka: to so zaobljeni pravokotniki ali ovali</br></br><IMG SRC="35prog02.jpg" ALT="?" BORDER=0></br></br>
+		<li>povezovalne črte s puščicami, ki nakazujejo smer poteka operacij:</br></br><IMG SRC="35prog03.jpg" ALT="?" BORDER=0></br></br>
+		<li>simbol za posamezne korake ali operacije algoritma: to so pravokotniki</br></br><IMG SRC="35prog04.jpg" ALT="?" BORDER=0></br></br>
+		<li>simbol za vnos in iznos podatkov: to so paralelogrami</br></br><IMG SRC="35prog05.jpg" ALT="?" BORDER=0></br></br>
+		<li>simbol za izpis rezultatov (na papir):</br></br><IMG SRC="35prog06.jpg" ALT="?" BORDER=0></br></br>
+		<li>simbol za odločitev: to so rombi</br></br><IMG SRC="35prog07.jpg" ALT="?" BORDER=0></br></br>
+	<li>Pa si spet oglejmo kar primer:
+	<li><b>Besedni opis problema in rešitve.</b>
+		<ul type="bullet">
+			<li><b>"Vnos celega števila s pogojem":</b> Napiši program, ki prebere celo število ter ugotovi, če je manjše od izbrane mejne vrednosti. Če je manjše, naj nam program to število vrne, če pa je večje, naj nas program opozori, da je število preveliko in nas pozove, da vnesemo novo število. Vprašamo se, kaj vse bomo morali postoriti za rešitev problema in to opišemo v nekaj stavkih.
+				<ol type="1">
+					<li>Prebrati moramo število.
+					<li>Prebrano število, ki je niz, moramo pretvoriti v pravo število.
+					<li>Določiti moramo mejno vrednost vnosa.
+					<li>Ugotoviti moramo, če je vnešeno (prebrano število) manjše od izbrane mejne vrednosti.
+					<li>Izpisati moramo ustrezno sporočilo.
+				</ol>
+		</ul>
+	<li><b>Psevdokoda</b>
+		<ul type="bullet">
+			<li><b>"Vnos celega števila s pogojem":</b> Pri opisovanju problema si pomagamo z besedami, ki spominjajo na ukaze programskega jezika:
+				<ol type="1">
+					<li>beri niz a;
+					<li>pretvori niz a v število a;
+					<li>določi mejno vrednost;
+					<li>primerjaj števili a in mejno vrednost;
+					<li>izpiši ustrezno sporočilo;
+				</ol>
+		</ul>
+		<li><b>Diagram poteka</b>
+		<ul type="bullet">
+			<li><b>"Vnos celega števila s pogojem":</b> Ukaze psevdokode zamenjajo simboli posameznih korakov algoritma
+			</br></br><IMG SRC="35prog08.jpg" ALT="?" BORDER=1></br></br>
+		</ul>
+	<li><b>Program (računalniški programi)</b>
+		<ul type="square">
+			<li><b>"Vnos celega števila s pogojem":</b> Problem opišemo kar s programom v programskem jeziku Java.
+			<ol type="1">
+				<li>prebrati število a kot niz</br></br><IMG SRC="35prog09.jpg" ALT="?" BORDER=1></br></br>
+				<li>prebrani niz a pretvoriti v število - to storimo z metodo "Integer.parseInt(niz)";</br></br><IMG SRC="35prog10.jpg" ALT="?" BORDER=1></br></br>
+				<li>določiti želeno mejno vrednost vnosa</br></br><IMG SRC="35prog11.jpg" ALT="?" BORDER=1></br></br>
+				<li>ugotoviti, ali je a manjši od mejne vrednosti - to storimo s stavkom "if-else"</br></br><IMG SRC="35prog12.jpg" ALT="?" BORDER=1></br></br>
+				<li>izpis rezultata z metodo "JOptionPane.showMessageDialog()"</br></br><IMG SRC="35prog12.jpg" ALT="?" BORDER=1></br></br>
+			</ol>
+		</ul>
+	</ol>
+</ol>
+
+<big>VAJA 35: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "MejniVnos". Pomagaj si s sliko.</br></br><IMG SRC="35prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="35koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek35.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek35.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+		<li><font color="red">Preriši diagram poteka v tej učni enoti v zvezek.</font>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. V zvezek nariši simbola za začetek in konec diagrama poteka.<br>
+2. V zvezek nariši puščice za nakazovanje smeri poteka izvajanja algoritma.<br>
+3. V zvezek nariši simbol za posamezne korake ali operacije algoritma.<br>
+4. V zvezek vriši simbol za vnos in iznos podatkov v diagramu poteka.<br>
+5. V zvezek nariši simbol za izpis rezultatov v diagramu poteka.<br>
+6. V zvezek nariši simbol za odločitev v diagramu poteka.<br>
+7. Koliko znaša mejno število v programu te učne enote?<br>
+8. Katerega tipa je spremenljivka, ki jo preberemo v programu te učne enote?<br>
+9. Katerega tipa je spremenljivka, ki jo primerjamo z mejno vrednostjo v programu te učne enote?<br>
+10. Katerih elementov diagram poteka primera v tej učni enoti ne vsebuje?	<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_5_pogojni-92455a38/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A><br>
+<A HREF="http://en.wikipedia.org/wiki/Flowchart">Angleška verzija Wikipedije</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

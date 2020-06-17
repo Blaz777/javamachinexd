@@ -1,0 +1,21 @@
+class NiziMetode02 {
+  public static void main(String[] args) {  
+    String niz1 = "DUSAN", niz2 = "dusan", niz3;
+    Boolean rezultat;
+    Integer poAbecedi;
+    rezultat = niz1.equalsIgnoreCase(niz2);
+    System.out.println("1. Èe primerjamo "+niz1+" in "+niz2+" brez upoštevanja velikosti èrk, dobimo "+rezultat+"!"); 
+    rezultat = niz1.equals(niz2);
+    System.out.println("2. Èe primerjamo "+niz1+" in "+niz2+" z upoštevanjem velikosti èrk, dobimo "+rezultat+"!");
+    poAbecedi = "morala".compareTo("moramo");
+    System.out.println("3. Èe primerjamo \"morala\" in \"moramo\", dobimo "+poAbecedi+"!");
+    poAbecedi = "moramo".compareTo("morala");
+    System.out.println("4. Èe primerjamo \"moramo\" in \"morala\", dobimo "+poAbecedi+"!");
+    poAbecedi = "moramo".compareTo("moramo");
+    System.out.println("5. Èe primerjamo \"moramo\" in \"moramo\", dobimo "+poAbecedi+"!");
+    niz3 = "pozornost".toUpperCase();
+    System.out.println("6. Male èrke besede \"pozornost\" lahko spremenimo v velike èrke: \""+niz3+"\"!");
+    niz3 = "razumevanje".toLowerCase();
+    System.out.println("7. Velike èrke besede \"RAZUMEVANJE\" lahko spremenimo v male èrke: \""+niz3+"\"!");
+   } 
+}

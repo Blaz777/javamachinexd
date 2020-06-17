@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>IZRAZI (16)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>IZRAZI IN PRIORITETA OPERACIJ (16)
+<p><em><font color="red">Komur se mudi, naj gre počasi.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>IZRAZI IN PRIORITETA OPERACIJ</big>
+</center>
+
+<ol type="1">
+	<li>Izrazi so zapisi, ki vsebujejo spremenljivke in operande.
+	<li>Izrazi so zapisi operacij, ki jih izvajamo nad spremenljivkami, ki so vključene v te izraze.
+	<li>Spremenljivke v izrazih zato imenujemo tudi operandi.
+	<li>Primer: 3+4*5/2-7 - operandi so števila 3, 4, 5, 2, 7, operatorji so +, *, /, -.
+	<li>Izraze moramo pisati v skladu s pravili programskega jezika, v katerem pišemo program.
+	<li>Pravila pisanja programa imenujemo sintaksa.
+	<li>Izraz je torej zapis neke operacije, izvedene nad operandi.
+	<li>Vsaka izvedba operacije nad operandi vedno izračuna neko novo vrednost - rezultat.
+	<li>V programiranju pravimo, da izraz vrne vrednost.
+	<li>Primer: 3+4*5/2-7 vrne vrednost 6.
+	<li>Podatkovni tip vrednosti izraza je odvisen od podatkovnih tipov operandov in vrste operacije v izrazu.
+	<li>Primer: 3+4*5/2-7 - podatkovni tip rezultata je celo število (integer), ker so istega podatkovnega tipa tudi operandi.
+	<li>Java omogoča pisanje sestavljenih izrazov, ki vsebujejo več operandov in operacij.
+	<li>Prvi pogoj za take izraze je ta, da morajo biti vsi operandi v izrazu pripadati istemu tipu podatkov.
+	<li>Drugi pogoj pa je upoštevanje pomembnosti posameznih operacij v sestavljenem izrazu.
+	<li>Izid niza različnih operacij v sestavljenem izrazu je odvisen od vrstnega reda izvedbe teh operacij.
+	<li>Upoštevati moramo tako imenovano prioriteto operacij.
+	<li>Štiri osnovne aritmetične operacije so po pomembnosti ali prioriteti razvrščene takole: množenje (*) in deljenje (/) izvajamo pred seštevanjem (+) in odštevanjem (-).
+	<li>Množenje in deljenje sta med sevoj enakovredna. Seštevanje in odštevanje sta med seboj enakovredna.
+	<li>V Javi je dodan še ostanek pri deljenju (%).
+	<li>Vse operacije v izrazih so torej v Javi razporejene takole: *, /, %, +, -.
+	<li>Ostanek pri deljenju je enakovreden množenju in deljenju. Ima torej prednost pred seštevanjem in odštevanjem
+	<li>Primer: 3+4*5/2-7 - najprej izvedemo množenje (4*5), nato deljenje ((4*5)/2), nato seštevanje  (3+((4*5)/2)) in na koncu še odštevanje ((3+((4*5)/2))-7).
+	<li>Vrstni red izvajanja operacij v sestavljenem izrazu lahko spremenimo z uporabo oklepajev.
+	<li>Primer: (3+4)*5/(2-7).
+	<li>Čeprav so operandi in operatorji povsem enaki v obeh izrazih, sta rezultata, ki ju vrneta izraza, različna.
+	<li>Če v izrazu nastopi večkrat ista operacija ali enakovredne operacije, lahko izvedemo operacijo kar od leve proti desni.
+	<li>Primer: 7+10+2-4+6-7-8, koraki izvedbe; 1. (7+10), 2. (7+10)+2, 3. ((7+10)+2)-4, 4. (((7+10)+2)-4+6), 5. ((((7+10)+2)-4+6)-7), 6. (((((7+10)+2)-4+6)-7)-8).
+</ol>
+
+<big>VAJA 16: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Izrazi". Pomagaj si s sliko.</br></br><IMG SRC="16prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="16koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek16.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek16.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="16prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Kaj so izrazi?<br>
+2. Kaj so operandi?<br>
+3. Kaj so operatorji?<br>
+4. Kaj je sintaksa?<br>
+5. Od česa je odvisen podatkovni tip rezultata, ki ga izraz vrne?<br>
+6. Kaj so sestavljeni izrazi?<br>
+7. Kaj je prioriteta operacij?<br>
+8. Zapiši vse operacije v Javi in jih razvrsti po pomembnosti.<br>
+9. Kako računamo sestavljene izraze z enakovrednimi operatorji?<br>
+10. Zapiši številke izpisanih stavkov v priemru te učne enote, kjer nastopajo sestavljeni izrazi.<br>
+11. Zakaj se rezultat izrazov v stavkih 6 in 7 razlikuje, če pa v njih nastopajo isti operandi in iste operacije?<br>
+12. Zakaj se rezultat izrazov v stavkih 8 in 9 ne razlikuje, čeprav smo operande združevali na različna načina?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_1_osnove-47c9dceb/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/expressions.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,11 @@
+class Vrsta20Tretjic { 
+   public static void main(String[])   {
+      i = 0;  //deklariranje in inicializacija števca
+      while (i < 20) //pogoj je v tem primeru v obliki primerjanja - "manjši kot"
+        {
+        i++; števec poveèamo za ena - inkrement
+        System.out.print(" "+i); //izpišemo presledek in i
+        }
+      System.out.println(.);//izpišemo piko
+   }
+}

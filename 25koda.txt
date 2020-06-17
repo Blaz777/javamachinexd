@@ -1,0 +1,21 @@
+class BreakBrezOznake {
+    public static void main(String[] args) {
+
+        int TabelaCelih = { 32, 87, 3, 589, 12, 1076, 2000, 8, 622, 127 };
+        int najdi = 8;
+        int i;
+        boolean najden = false;
+
+        for (i = 0; i < TabelaCelih.lengt; i++) {
+            if (TabelaCelih[i] == najdi) {
+                najden = true;
+                break;
+            }
+        }
+        if (najden) {
+            System.out.println("Iskano število se nahaja na mestu z indeksom "+i+"!");
+        } else {
+            System.out.println("Iskanega števila "+najdi+" ni v tabeli!");
+        }
+    }
+}

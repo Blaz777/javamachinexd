@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>PROGRAM (36)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>PROGRAM (36)
+<p><em><font color="red">Kdor v naglici išče, malokdaj najde.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>PROGRAM</big>
+</center>
+
+<ol type="1">
+	<li>Računalniški program je zaporedje navodil, ki jih mora računalnik izvesti.
+	<li>Računalnik potrebuje za izvajanje nalog program, katerega korake izvaja procesor računalnika.
+	<li>Računalniški program je lahko izveden v samostojni izvršilni obliki in se lahko samostojno izvaja.
+	<li>Tak program prepoznamo po končnici ".exe" - executable, kar pomeni v angleščini "izvršljiv".
+	<li>Program je lahko tudi v obliki izvorne kode.
+	<li>Izvorna koda je tudi eden od načinov zapisa algoritma.
+	<li>Izvorno kodo zapišemo s pomočjo programskega jezika.
+	<li>Tak program v obliki izvorne kode mora biti pred zagonom preveden.
+	<li>Izvorno kodo prevajamo s prevajalnikom, ki se v angleščini imenuje "compiler".
+	<li>Izvorno kodo moramo prevesti v kodo, ki jo "razume" procesor.
+	<li>Ker je procesor "stroj", imenujemo kodo, ki jo "razume" procesor, tudi strojna koda.
+	<li>Ker je koda, ki jo "razume" procesor, zapisana le z znaki 1 in 0, ki so dvojiški znaki, imenujemo to kodo tudi dvojiška koda.
+	<li>Pa si spet oglejmo kar primer:
+	<li><b>Besedni opis problema in rešitve.</b>
+		<ul type="bullet">
+			<li><b>"Razstavi število na njegov celi del in njegov decimalni del":</b> Napiši program, ki prebere število, ga razstavi na njegov celi in njegov decimalni del ter oba dela števila posebej izpiše. Vprašamo se, kaj vse bomo morali postoriti za rešitev problema in to opišemo v nekaj stavkih.
+				<ol type="1">
+					<li>Prebrati moramo število.
+					<li>Prebrano število, ki je niz, moramo pretvoriti v pravo število.
+					<li>Določimo celi del prebranega števila.
+					<li>Določimo decimalni del celega števila.
+					<li>Izpišemo ustrezno sporočilo.
+				</ol>
+		</ul>
+	<li><b>Psevdokoda</b>
+		<ul type="bullet">
+			<li><b>"Razstavi število na njegov celi del in njegov decimalni del":</b> Pri opisovanju problema si pomagamo z besedami, ki spominjajo na ukaze programskega jezika:
+				<ol type="1">
+					<li>beri niz a;
+					<li>pretvori niz a v število a;
+					<li>določi celi del a;
+					<li>določi decimalni del a;
+					<li>izpiši ustrezno sporočilo;
+				</ol>
+		</ul>
+		<li><b>Diagram poteka</b>
+		<ul type="bullet">
+			<li><b>Primer "Razstavi število na njegov celi del in njegov decimalni del":</b> Ukaze psevdokode zamenjajo simboli posameznih korakov algoritma
+			</br></br><IMG SRC="36prog02.jpg" ALT="?" BORDER=1></br></br>
+		</ul>
+	<li><b>Program (računalniški programi)</b>
+		<ul type="square">
+			<li><b>"Razstavi število na njegov celi del in njegov decimalni del":</b> Problem opišemo kar s programom v programskem jeziku Java.
+			<ol type="1">
+				<li>prebrati število a kot niz</br></br><IMG SRC="36prog03.jpg" ALT="?" BORDER=1></br></br>
+				<li>prebrani niz a pretvoriti v število a - to storimo z metodo "Double.parseDouble(niz);"</br></br><IMG SRC="36prog04.jpg" ALT="?" BORDER=1></br></br>
+				<li>določiti celi del števila a - to storimo z metodo "(int)steva"</br></br><IMG SRC="36prog05.jpg" ALT="?" BORDER=1></br></br>
+				<li>določiti decimalni del števila a - to storimo z odštevanjem celega dela od števila a</br></br><IMG SRC="36prog06.jpg" ALT="?" BORDER=1></br></br>
+				<li>izpis rezultata z metodo "JOptionPane.showMessageDialog()"</br></br><IMG SRC="36prog07.jpg" ALT="?" BORDER=1></br></br>
+			</ol>
+		</ul>
+	</ol>
+</ol>
+
+<big>VAJA 36: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "CeliInDecimalni". Pomagaj si s sliko.</br></br><IMG SRC="36prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="36koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek36.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek36.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+		<li><font color="red">Preriši diagram poteka v tej učni enoti v zvezek.</font>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je računalniški program?<br>
+2. Kako prepoznamo program v samostojni izvršljivi obliki?<br>
+3. Kaj potrebujemo za zagon programa, če je program zapisan v izvorni kodi?<br>
+4. Kako imenujemo kodo, ki jo "razume" procesor?<br>
+5. Naštej načine zapisa algoritma.<br>
+6. Koliko korakov vsebuje algoritem primera v tej učni enoti? Kratko opiši posamezne korake<br>
+7. Katero novo metodo smo spoznali v priemru v tej učni enoti?<br>
+8. Kakšna je naloga metode, ki smo jo spoznali v tej učni enoti?<br>
+9. Kateri podatkovni tip smo prvič uporabili v primeru te učne enote?<br>
+10. V kakšnih primerih moramo uporabiti ta podatkovni tip?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/index.html#h2_2">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://en.wikipedia.org/wiki/Programming_language">Angleška verzija Wikipedije</A><br>
+<A HREF="http://sl.wikipedia.org/wiki/Program">Slovenska verzija Wikipedije</A>
+
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

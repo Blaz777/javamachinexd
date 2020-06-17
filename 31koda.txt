@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+class DveStevili { 
+   public static void main(String[] args)   {
+      int a;
+      boolean deli;
+      String beri
+
+      beri = JOptionPane.showInputDialog             //1. korak: prebrati število b (deljenec)
+              ("Vnesi celo število, katerega deljivost te zanima: ");      
+      b = IntegerparseInt(beri);
+      
+      beri = JOptionPane.showInputDialog            //2. korak: prebrati število a (delitelj)
+               ("Vnesi morebitnega delitelja: ");
+      a = Integer.parseInt(beri);
+      deli = (b % a = 0);                          //3. korak: ugotoviti, ali dobimo ostanek pri deljenju
+     
+      if (deli) JOptionPane.showMessageDialog       //4. korak: zapisati primerno ugotovitev, dve pa sta možni
+                (null, "Število "+a+" je delitelj števila "+b+"!");
+        else JOptionPane.showMessageDialog                 
+                (null, "Število "+a+" ni delitelj števila "+b+"!");
+    }
+}

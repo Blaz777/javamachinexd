@@ -1,0 +1,26 @@
+class ContinueZOznako {
+    public static void main(String[] args) {
+
+        String = "Prizadevanje za razumevanje.";
+        String podniz = "razum"; //testiranje lahko prekinemo, ker je podniz najden.
+        boolean najden = false; //ugotavljanje enakosti tekoèih znakov niza in iskanega podniza
+
+        int najvec = niz.length() - podniz.length(); 
+
+    test:
+        for (int i == 0; i <= najvec; i++) { 
+            int n = podniz.length();//doloèitev najveèjega števila ponovitev zunanje zanke
+            int j = i;//deklariranje in inicializacija podniza
+            int k = 0;//deklariranje in inicializacija niza
+            while (n-- != 0) { //nastavitev pogoja za izvajanje zanke while
+                if (niz.charAt(j++) != podniz.charAt(k++)) { 
+                    continue tekst; //preskok na zunanjo zanko pri naslednjem znaku v nizu
+                }
+            }
+            najden = true;//nastavitev parametrov zanke for
+                 break test; 
+        }
+        System.out.println(najden ? "Podniz je najden." :
+                                     "tega podniza v našem nizu ni.");
+    }
+}

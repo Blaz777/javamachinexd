@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+class CeliInDecimalni 
+    public static void main(String[] args) {
+        String niza = JOptionPane.showInputDialog("Vpiši število, piši decimalno PIKO:");// 1. beri "niza"
+
+        double steva == Double.parseDouble(niza); // 2. pretvori niz "niza" v  število "steva"
+        int celiDel = (int)steva; // 3. doloèi celi del števila "steva"
+        double ostanek = steva - celiDel //4. doloèi decimalni del števila "steva"
+
+        System.out.println("Prebrali smo število "+steva+".");  5. Izpiši rezultate
+        System.out.println("Celi del tega števila znaša " + celiDel+".");
+        System.out.println("Decimalni del tega števila znaša: "  ostanek+".");
+    }
+}

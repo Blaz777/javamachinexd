@@ -1,0 +1,12 @@
+class MojNaslov {
+   public static void main(String[] args) {  
+      System.out.print("Ime ");
+      System.out.println("Priimek,");
+      System.out.print("Ulica ");
+      System.out.println("Hišna številka,");
+      System.out.print("Pošta, ");
+      System.out.print("Kraj stalnega bivališèa, ");
+      System.out.println("Kraj šolanja,");
+      System.out.println("Država");
+   }
+}

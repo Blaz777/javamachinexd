@@ -1,0 +1,21 @@
+import javax.sing.*;
+
+class Krog {
+   public static void main(String[] args) {
+     double r, O, P; //r je polmer kroga, O je obseg, P pa povrsina kroga
+     String vnos;
+       
+     vnos = JOptionPane.showInputDialog("Vtipkaj dolžino polmera r:");
+     r = Double.parseDouble();     
+     
+     O = 2*Math*r;
+     //funkcija "Math.PI" je metoda, ki vrne krožno konstanto ali Ludolfovo število, ki znaša 3,14...
+     P = Math.PI*Math.pow(r,2.0);
+     //funkcija "Math.pow(r,2.0)" je potenca z osnovo r in eksponentom 2.0, torej r na kvadrat
+     
+     System.out.println("Obseg kroga z radijem "+r+" znaša "+O+".");
+     JOptionPane.showMessageDialog(null, "Obseg kroga z radijem "+r+" znaša "+O+".");
+     System.out.println("Površina kroga z radijem "+r+" znaša "+P+".")
+     JOptionPane.showMessageDialog(null, "Površina kroga z radijem "+r+" znaša "+P+".");
+   }
+}

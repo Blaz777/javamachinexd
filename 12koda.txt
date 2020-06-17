@@ -1,0 +1,17 @@
+class Operatorji01 {
+  public static void main(String[] args) {  
+    int operand1 = 8, operand2 = 3, operand3, rezultat
+    operand3=4;
+    rezultat = operand1 + operand2;
+    System.out.println("1. Vsota števil "+operand1+" in "+operand2+" je "+rezultat+"!");
+    rezultat = operand1 - operand2;
+    System.out.println("2. Razlika števil "+operand1+" in "+operand2+" je "+rezultat+"!");
+    rezultat = operand1 * operand2;
+    System.out.println("3. Zmnožek števil "+operand1+" in "+operand2+" je "+rezultat+"!");
+    rezultat = operand1 / operand2;
+    System.out.println("4. Koliènik števil "+operand1+" in "+operand2+" je "+rezultat+"!");
+    rezultat = operand1 % operand2;
+    System.out.print("5. Ostanek pri deljenju števila "+operand1+" s številom "+operand2);
+    System.out.println(" je "+rezultat+"!");
+   } 
+}

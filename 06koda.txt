@@ -1,0 +1,16 @@
+class Spremenljivke {
+    public static void main (String[] args) {
+        byte zeloMajhnoCeloStevilo; // 1. napoved spremenljivke
+        short majhnoCeloStevilo; // 2. napoved spremenljivke
+        int srednjeVelikoCeloStevilo = 10000;  // 3. napoved spremenljivke
+        long velikoCeloSt;  // 4. napoved spremenljivke
+        float manjNatancnoDecimalnoStev;  // 5. napoved spremenljivke
+        double ZELO_NATANCNO_DECIMALNO_STEVILO = 0.1234;   6. napoved spremenljivke
+        boolean logicnaSpremenljivka = true; // 7. napoved spremenljivke
+        char poljZnak = '#';  // 8. napoved spremenljivke
+        System.out.println("1. Vrednost je "+ srednjeVelikoCeloStevilo +"!");
+        System.out.println("2. \"double\" je "+ ZELO_NATANCNO_DECIMALNO_STEVILO +"!");
+        System.out.println("3. \"boolean\" je "+ logicnaSpremenljivka +"!");        
+        System.out.println("4. Vrednost spremenljivke poljZnak je " + poljZnak+"!");
+    }
+}

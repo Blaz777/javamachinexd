@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>RETURN (27)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>STAVEK RETURN (27)
+<p><em><font color="red">Naglica teče nesreči naproti.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>STAVEK RETURN</big>
+</center>
+
+<ol type="1">
+	<li>Zadnji v skupini stavkov za vejitve je stavek "return".
+	<li>Angleška beseda "return" pomeni "vrnitev" ali "vrniti se".
+	<li>S stavkom "return" dosežemo prekinitev izvajanja trenutno tekoče metode in vrnitev poteka izvajanja programa v točko, v kateri smo poklicali to metodo.
+	<li>Metoda je krajši programček, ki teče znotraj nekega drugega ali nadrejenega programa.
+	<li>Nadrejeni program imenujemo tudi glavni program.
+	<li>Metodo, ki jo pokličemo v glavni program, imenujemo tudi podprogram ali subrutina.
+	<li>Stavek "return" ima dve obliki.
+	<li>Prva oblika stavka "return" vrne neko izračunano vrednost.
+	<li>Druga oblika stavka "return" ne vrne nobene vrednosti.
+	<li>Stavek "retun" uporabimo vedno ob klicu metode.
+	<li>Če je metoda taka, da vrne neko izračunano vrednost, uporabimo prvo obliko stavka "return".
+	<li>Če je metoda taka, da ne vrne nobene izračunane vrednosti, uporabimo drugo obliko stavka. "return".
+	<li>Za konec te učne enote pa si oglejmo še primer stavka continue z oznako, ki smo ga dolžni še iz prejšnje učne enote.
+</ol>
+
+<center>
+<big>STAVEK CONTINUE Z OZNAKO</big>
+</center>
+
+<ol type="1">
+	<li>Ta stavek preskoči tisto ponovitev zunanje zanke, ki se trenutno izvaja.
+	<li>Stavek "continue" brez oznake bi skočil na stavek, ki sledi zanki.
+	<li>Stavek "continue" z oznako pa skoči na tisto mesto v programu, kjer je zapisana oznaka.
+	<li>Oznaka je v spodnjem primeru beseda "test".
+	<li>Stavek "continue" z oznako omogoča večji nadzor nad potekom programa, saj lahko sami določimo, kje se izvajanje programa nadaljuje.
+	<li><b>Opis delovanja programa:</b> Spodnji program uporablja gnezdene ali vgnezdene zanke za iskanje niza znotraj drugega niza. Eno manjšo zanko potrebujemo za pomikanje vzdolž podniza. Drugo večjo zanko potrebujemo za pomikanje vzdolž niza. Stavek "continue" z oznako uporabimo v tem programu zato, da preskočimo nepotrebno ponavljanje zunanje zanke.
+	<pre>
+class ContinueZOznako {
+    public static void main(String[] args) {
+
+        String niz = "Prizadevanje za razumevanje.";
+        String podniz = "razum";
+        boolean najden = false;
+
+        int najvec = niz.length() - podniz.length();
+
+    <font color="red"><b>test:</b></font>
+        for (int i = 0; i &lt;= najvec; i++) {
+            int n = podniz.length();
+            int j = i;
+            int k = 0;
+            while (n-- != 0) {
+                if (niz.charAt(j++)
+                        != podniz.charAt(k++)) {
+                    <font color="red"><b>continue test;</b></font>
+                }
+            }
+            najden = true;
+                 break test;
+        }
+        System.out.println(najden ? "Podniz je najden." :
+                                     "tega podniza v našem nizu ni.");
+    }
+}
+
+	</pre>
+	<li>
+</ol>
+
+<big>VAJA 27: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "ContinueZOznako". Pomagaj si s sliko.</br></br><IMG SRC="27prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="27koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek27.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek27.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="27prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Kaj pomeni angleška beseda "return"?<br>
+2. Kaj je naloga stavka "return" v Javi?<br>
+3. Kaj je metoda?<br>
+4. Kateri so še drugi nazivi za metodo?<br>
+5. Kaj je glavni program?<br>
+6. Kateri sta dve obliki stavka "return" in kakšna je razlika med njima?<br>
+7. V čem se razlikuje stavek "continue" z oznako od stavka "continue" brez oznake?<br>
+8. Zapiši niz, v katerem iščemo podniz v vaji te učne enote.<br>
+9. Zapiši podniz, ki ga iščemo v vaji te učne enote.<br>
+10. V zgledu izvorne kode vaje v tej učni enoti so pojasnila napisana na neustreznih mestih. V svojem programu zapiši ta pojasnila tako, da bodo pravilno pojasnjevala stavke, ki so jim pripisana.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/branch.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

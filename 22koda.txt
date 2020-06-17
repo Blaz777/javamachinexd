@@ -1,0 +1,13 @@
+class While {
+     public static void main(String[] args){
+          int stevec = 1;  deklariranje in inicializacija števca
+          while (stevec < 5) //pogoj je v tem primeru v obliki primerjanja - "manjši kot"
+          {
+               System.out.println("Števec znaša: "+stevec+"!");// Ob vsakem preletu zanke izpiše vrednost števca.
+               System.out.println("Vrednost postavljenega pogoja (stevec<5) znasa +(stevec < 5)+"!");          
+               stevec++; //števec poveèamo za ena - inkrement
+          }
+          System.out.println("Zanka se je iztekla, števec je dosegel vrednost "+stevec+"!");
+          System.out.println("Vrednost postavljenega pogoja (stevec<5) znasa "+(stevec < 5)+"!");          
+     }
+}

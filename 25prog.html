@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>BREAK (25)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>STAVEK BREAK (25)
+<p><em><font color="red">Skrbi pridejo nepovabljene.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>STAVEK BREAK</big>
+</center>
+
+<ol type="1">
+	<li>Stavek "break" pomeni prekinitev izvajanja.
+	<li>Beseda "break" pomeni prekinitev ali prelom.
+	<li>Stavek "break" sodi v skupino ukazov za vejitve programov.
+	<li>Vejitev programa je točka, v kateri obstojata dve različni možnosti nadaljnega izvajanja programa.
+	<li>V Javi poznamo dve vrsti stavka "break": stavek "break" brez oznake in stavek "break" z oznako.
+	<li>Stavek "break" brez oznake smo spoznali pri stavku "switch".
+	<li>V primeru stavka "switch" je "break" omogočal preskok izvajanja programa s tistega izmed stavkov "case", ki je ustrezal postavljenemu pogoju, na stavek, ki je sledil stavku "switch".
+	<li>S stavkom break smo torej preskočili vse stavke "case", ki so sledili izbranemu. Tako smo preprečili njihovo neželeno izvajanje.
+	<li>Stavek "break" brez oznake lahko uporabimo tudi za prekinitev vseh vrst zank.
+	<li>Primer:
+	<pre>
+class Break01 {
+    public static void main(String[] args) {
+
+        int[] Tabela = { 32, 87, 3, 589, <font color="red">12</font>, 1076, 2000, 8, 622, 127 };
+        int iskani = <font color="red">12</font>;
+        int i;
+        boolean bingo = false;
+
+        for (i = 0; i < Tabela.length; i++) {
+            if (Tabela[i] == iskani) {
+                bingo = true;
+                <font color="red"><b>break;</b></font>
+            }
+        }
+        if (bingo) {
+            System.out.println("Iskano število se nahaja na mestu z indeksom "+i+"!");
+        } else {
+            System.out.println("Iskanega števila "+iskani+" ni v tabeli!");
+        }
+    }
+}
+	</pre>
+	<li>V našem zgornjem primeru iščemo število 12.
+	<li>To število iščemo v tabeli z imenom "TabelaCelih".
+	<li>Število 12 se nahaja v tabeli "TabelaCelih" na petem mestu, če štejemo od začetka tabele.
+	<li>Ker se indeksi začnejo s številom 0, ustreza peto mesto številu 4.
+	<li>Število 12 torej najdemo v tabeli "TabelaCelih" na mestu z indeksom "4".
+	<li>Stavek "break" v tem primeru prekine izvajanje zanke "for", če najdemo iskano število.
+</ol>
+
+<big>VAJA 25: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "BreakBrezOznake". Pomagaj si s sliko.</br></br><IMG SRC="25prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="25koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek25.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek25.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="25prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Kakšna je naloga stavka "break"?<br>
+2. Kaj pomeni angleška beseda "break"?<br>
+3. Kaj omogoča stavek "break", če ga uporabimo v okviru stavka "switch"?<br>
+4. Kaj je vejitev programa?<br>
+5. Katero število išče program v vaji te učne enote?<br>
+6. Na katerem mestu v tabeli se iskano število nahaja?<br>
+7. Koliko znaša indeks iskanega števila?<br>
+8. Program v vaji te učne enote preuredi tako, da bo iskal število 10. Kakšen je izpis programa? Rezultat pokaži profesorju.<br>
+9. Katero zanko lahko najdemo v vaji te učne neote?<br>
+10. Kateri pogojni stavek lahko najdemo v vaji te učne enote?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/branch.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

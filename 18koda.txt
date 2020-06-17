@@ -1,0 +1,15 @@
+class Bloki {
+     public static void main(String[] args){
+          prvi = 1, drugi = 2, rezultat;  
+          boolean pogojIN; 
+          pogojIN = ((prvi == 1) && (drugi == 2)); 
+          if (pogojIN) {
+            System.out.println("1. Pogoj v stavku "if-else\" je izpolnjen!");
+            System.out.println("2. Zato se sedaj izpišejo trije stavki, ki jih vsebuje tale blok!");
+            System.out.println("3. Vrednost logiène spremenljivke \"pogojIN\" je namreè "+pogojIN+"!");
+          } else {
+              System.out.println("4. Pogoj v stavku \"if-else\" ni izpolnjen!");
+              System.out.println("5. Vrednost logiène spremenljivke \"pogojIN\" je namreè "+pogojIN+"!!");
+          }  
+     }
+}

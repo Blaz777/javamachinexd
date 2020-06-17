@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>METODE NA NIZIH (09)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>METODE NA NIZIH (09)
+<p><em><font color="red">Če človek ne more biti lep in bogat, je lahko vsaj dober in pošten.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>METODE NA NIZIH - PRVI DEL</big>
+</center>
+
+<ol type="1">
+	<li><b>Določanje dolžine izbranega niza:</b>
+	<ol type="1">
+		<li>Dolžina niza je podana s številom znakov, ki jih niz vsebuje.
+		<li>Primer ugotavljanja dolžine niza: <font color="red">"razumevanje".length();</font>.
+		<li>Program v Javi bi v zgornjem primeru vrnil vrednost 11.
+		<li>Niz z vrednostjo "razumevanje" vsebuje namreč enajst znakov.
+		<pre>
+		1 2 3 4 5 6 7 8 9 10 11
+		r a z u m e v a n j  e
+		</pre>
+		<li>Zgornji primer lahko razdelimo na dva dela.
+		<li>Prvi del ("razumevanje") je niz, na katerem bi radi izvedli metodo, s katero bi želeli ugotoviti dolžino tega niza.
+		<li>Drugi del (length()) je metoda ali funkcija, ki jo pokličemo in nam po izvedbi vrne vrednost; to je število znakov, ki jih niz, zapisan v prvem delu ukaza, vsebuje.
+	</ol>
+	<li><b>Branje znaka na izbranem mestu niza:</b>
+	<ol type="1">
+		<li>Ukaz <font color="red">"razumevanje".charAt(4);</font> nam vrne vrednost znaka, ki se nahaja v nizu "razumevanje" na petem mestu od leve proti desni.
+		<li>V zgornjem primeru je rezultat, ki ga vrne metoda "charAt()", znak "m".
+		<li>Znak "m" je v zgornjem primeru resda peti po vrsti, toda preštevanje znakov v nizu se začne z 0 in ne z 1. Vrednost, ki jo ta metoda vrne je tako "m" in ne "u".
+		<pre>
+		0 1 2 3 <font color="red">4</font> 5 6 7 8 9 10
+		r a z u <font color="red">m</font> e v a n j e
+		</pre>
+		<li>Zgradba metode "charAt()" je enaka kot zgradba metode "length()".
+		<li>Najprej zapišemo niz, na katerem želimo izvesti metodo, potem pa piko in za piko metodo.
+	</ol>
+	<li><b>Branje podniza:</b>
+	<ol type="1">
+		<li>Podniz je niz, ki je del nekega daljšega niza.
+		<li>Beseda ali niz "eva" je tako podniz besede ali niza "razumevanje".
+		<pre>
+		0 1 2 3 4 <font color="red">5</font> 6 7 <font color="red">8</font> 9 10
+		r a z u m <font color="red">e v a</font> n j e
+		</pre>
+		<li>V zgornjem zgledu vidimo, da se podniz "eva" začne na mestu z indeksom <font color="red">5</font> in konča na mestu z indeksom <font color="red">7</font> v nizu "razumevanje". kot zgornjo mejo podniza moramo zapisati indeks zadnje črke v podnizu, ki mu dodamo še 1; 7+1=8.
+		<li>Metodo za branje podniza lahko na splošno zapišemo torej takole: <font color="red">"razumevanje".substring(spodnjameja,zgornjameja+1);</font>.
+		<li>Metodo za branje podniza v zgornjem primeru zapišemo torej takole: <font color="red">"razumevanje".substring(5,8);</font>.
+		<li>Če želimo izpisati podniz od izbranega mesta do konca niza, lahko navedemo kot argument metode ".substring(spodnjameja)" le spodnjo mejo, torej indeks črke, s katero se izbrani podniz začenja.
+	</ol>
+	<li><b>Določitev mesta začetka izbranega podniza v nizu:</b>
+	<ol type="1">
+		<li>Ukaz <font color="red">"razumevanje".indexOf("um");</font> je metoda iskanja začetka podniza "um" v nizu "razumevanje".
+		<li>Rezultat te metode je indeks ali kazalec mesta, na katerem se v nizu "razumevanje" začne podniz "um".
+		<li>V našem primeru se začne iskani podniz na mestu z indeksom 3.
+		<pre>
+		0 1 2 <font color="red">3</font> 4 5 6 7 8 9 10
+		r a z <font color="red">u m</font> e v a n j e
+		</pre>
+		<li>Če iskanega podniza v nizu ni, je rezultat te metode -1.
+	</ol>
+</ol>
+
+<big>VAJA 9: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši program "NiziMetode01". Pomagaj si sliko.</br></br><IMG SRC="09prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="09koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek09.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek09.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="09prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Zapiši ime spremenljivke, ki smo jo deklarirali v programu v tej učni enoti.<br>
+2. Zapiši vrednost spremenljivke, ki smo jo deklarirali v programu v tej učni enoti.<br>
+3. Zapiši ukaz oziroma metodo za določanje dolžine niza.<br>
+4. Zapiši ukaz oziroma metodo za branje znaka na izbranem mestu niza.<br>
+5. Zapiši ukaz oziroma metodo za branje podniza na določenem mestu niza.<br>
+6. Zapiši ukaz oziroma metodo za določanje začetka izbranega podniza v nizu.<br>
+7. Kaj predstavljata argumenta metode "razumevanje".substring(5,8) v stavku št. 5?<br>
+8. Zakaj smo v stavku št. 6 zapisali kot argument metode beseda.substring(6) le eno število. Kaj to število predstavlja?<br>
+9. Zakaj je indeks znaka "m" v besedi "razumevanje" 4, če pa se ta znak dejansko nahaja na petem mestu v tej besedi?<br>
+10. Zakaj vrne metoda beseda.indexOf("um") v stavku št. 9 vrednost -1? Kaj to pomeni?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_8_string-ece5b4d0/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

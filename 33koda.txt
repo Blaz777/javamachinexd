@@ -1,0 +1,28 @@
+import javax.swing.*;//zvezdica pomeni, da lahko iz te knjižnice klièemo...
+                     //vse metode, ki jih ta knjižnica vsebuje
+import java.util.GregorianCalendar;   // iz knjižnice "java.util" bomo klicali...
+        // metodo "GregorianCalendar", ki že omogoèa doloèitev prestopnega leta
+
+class PrestopnoLeto02 {      
+    public static void main(String[] args)   {
+      int leto;
+      boolean prestopno;
+      String beri, odgovor;
+      GregorianCalendar koledar = new  GregorianCalendar();
+
+      beri = JOptionPane.showInputDialog("Vpiši leto, ki te zanima: ");
+      leto = Integer.parseInt(beri); // leto, ki je še niz, pretvorimo v število
+      prestopno = koledar.isLeapYear(leto) // s pomoèjo metode isLeapYear(leto)...
+                                        // ugotovimo, ali je prebrano leto prestopno
+      odgovor = "Leto " + leto;         //zaènemo s pisanjem odgovora
+      if (pestopno) {
+         odgovor = odgovor + " je ";  // èe je vrednost spremenljivke "prestopno...
+      }                               // "true", zapišemo v odgovor besedico "je"
+      else  {
+         odgovor = odgovor + " ni ";  // èe je vrednost spremenljivke "prestopno...
+      }                               // "false", zapišemo v odgovor besedico "ni"
+      odgovor = odgovor + "prestopno leto!"
+      JOptionPane.showMessageDialog(null, odgovor,
+                        "Ali je leto prestopno?", JOptionPane.INFORMATION_MESAGE);
+    }                   // Izpišimo odgovor v sporoèilnem oknu
+}

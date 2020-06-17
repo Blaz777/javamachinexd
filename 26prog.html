@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>CONTINUE (26)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>STAVEK CONTINUE (26)
+<p><em><font color="red">Vrednost hiše je odvisna od tega, kakšne sosede ima.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>STAVEK CONTINUE</big>
+</center>
+
+<ol type="1">
+	<li>Stavek "continue" preskoči tisto ponovitev zanke, ki se trenutno izvaja.
+	<li>Angleška beseda "continue" pomeni "nadaljuj".
+	<li>Oglejmo si programček, ki se s spomočjo zanke sprehodi skozi izbrani stavek in v njem prešteje vse črke 'o'.
+	<li><b>Opis delovanja programa:</b> V vsaki ponovitvi zanke se v stavku (to je niz znakov) pomaknemo za en znak naprej. Če novi znak ni 'o', takoj skočimo na konec zanke, povečamo števec zanke za 1 in se v novi ponovitvi zanke pomaknemo na novi znak, kjer postopek ponovimo. Če je trenutno obravnavani znak enak črki 'o', povečamo števec zadetkov za 1. Ko preletimo vse znake v stavku (nizu), še izpišemo število najdenih črk 'o' v njem.
+	<pre>
+class Continue {
+    public static void main(String[] args) {
+
+        String stavek = "Pozornost na podrobnosti.";
+        int vsiZnaki = stavek.length();
+        int zadetki = 0;
+
+        for (int i = 0; i &lt; vsiZnaki; i++) {
+            if (stavek.charAt(i) != 'o')
+                <font color="red"><b>continue;</b></font>
+            zadetki++;
+        }
+        System.out.println("Stavek " + stavek + " vsebuje "+zadetki+" znakov 'o'.");
+    }
+}
+	</pre>
+	<li>Programi pogosto vsebujejo več zank.
+	<li>Nekatere zanke lahko tečejo znotraj drugih zank.
+	<li>Manjše zanke, ki so del večjih zank, imenujemo notranje zanke.
+	<li>Notranje zanke imenujemo tudi vgnezdene zanke.
+	<li>Način programiranja, pri katerem najdemo manjše zanke v notranjosti večjih zank, imenujemo gnezdenje zank.
+	<li>Večje zanke, ki vsebujejo manjše zanke, imenujemo zunanje zanke.
+	<li>Tudi pri stavku "continue" razlikujemo med dvema različnima možnostima.
+	<li>Stavek "continue" brez oznake skoči na konec najbolj notranje zanke in preveri, če je pogoj za izvajanje te zanke izpolnjen.
+	<li>Obstaja še stavek "continue" z oznako, ki ga bomo spoznali v naslednji učni enoti
+</ol>
+
+<big>VAJA 26: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Continue". Pomagaj si s sliko.</br></br><IMG SRC="26prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="26koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek26.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek26.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="26prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Kaj pomeni angleška beseda "continue"?<br>
+2. Kaj je naloga stavka "continue"?<br>
+3. Kaj so notranje zanke?<br>
+4. Kaj so zunanje zanke?<br>
+5. Kateri dve vrsti stavka "continue" poznamo? <br>
+6. Katero vrsto stavka "continue" smo spoznali v tej učni enoti?<br>
+7. Zapiši vse spremenljivke in njhove podatkovne tipe, ki smo jih deklarirali in inicializirali v vaji te učne enote.<br>
+8. Zapiši vse metode ali funkcije na nizih ali znakih, ki jih najdeš v programu iz vaje te učne enote.<br>
+9. Pojasnila programa na sliki izvorne kode so med seboj pomešana, tako da ne pojasnjujejo pravilno stavkov, ki so jim pripisana. Ko napišeš program v okolju drjava, prerazporedi pojasnila tako, da bodo dejansko ustrezala stavkom programa.<br>
+10. Potem ko izdelaš vajo 26 in jo pokažeš profesorju, spremeni program tako, da izločiš iz njega stavek "continue"? Kakšen je rezultat? Razloži, zakaj se delovanje programa spremeni.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/branch.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

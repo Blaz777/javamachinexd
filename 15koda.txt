@@ -1,0 +1,11 @@
+class Operatorji04 {
+     public static void main(String] args){
+          int prvi = 1;
+          int drugi = 2;
+          boolean pogojIN, pogojALI;
+          pogojIN = ((prvi == 1) & (drugi == 1));
+          System.out.println("1. "+prvi+"=1 IN "+drugi+" = 1; drugi pogoj ni izpolnjen, izid je "+pogojIN+"!");
+          pogojALI = ((prvi == 1) || (drugi == 1));
+          System.out.println("2. "+prvi+"=1 ALI "+drugi+" = 1; drugi pogoj ni izpolnjen, izid je "+pogojALI+"!");
+     }
+}

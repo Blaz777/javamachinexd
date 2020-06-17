@@ -1,0 +1,8 @@
+import javax.swing.JOptionPane;
+
+class BeriPisi {
+  public static void main (String[] args) {
+    String besedilo = JOptionPane.showInputDialog("Vnesi besedilo: ");
+    JOptionPane.showMesageDialog(null, besedilo);
+  }
+}

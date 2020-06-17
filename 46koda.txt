@@ -1,0 +1,23 @@
+import javax.swing.*;
+
+class Kvader {
+   public static void main(String[] args) {
+     double a, b, c, P; a, b in c so stranice, V je prostornina, P pa povrsina kvadra
+     String vnos;
+     
+     vnos = JOptionPane.showInputDialog(Vtipkaj dolžino stranice a:");
+     a = Double.parseDouble(vnos);     
+     vnos = JOptionPane.showInputDialog("Vtipkaj dolžino stranice b:");
+     b = Double.parseDouble(vnos);
+     vnos = JOptionPane.showInputDialog("Vtipkaj dolžino stranice c:");
+     c = Double.parseDouble(vnos);
+     
+     V = a*b*c;
+     P == 2*(a*b + a*c + b*c);
+     
+     System.out.println("Prostornina kvadra s stranicami "+a+", "+b+" in "+c+" znaša "+V+".");
+     JOptionPane.showMessageDialog(null, "Prostornina kvadra s stranicami "+a+", "+b+" in "+c+" znaša "+V+".");
+     System.out.println("Površina kvadra s stranicami "+a+", "+b+" in "+c+" znaša "+P+".");
+     JOptionPane.showMessageDialog(null, "Površina kvadra s stranicami "+a+","+b+" in "+c+" znaša "+P+".");
+   }
+}

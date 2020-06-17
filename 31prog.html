@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>OPREDELITEV ALGORITMA (31)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>OPREDELITEV ALGORITMA (31)
+<p><em><font color="red">Naglica je mati neuspeha.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>OPREDELITEV ALGORITMA</big>
+</center>
+
+<ol type="1">
+	<li>Algoritem je postopek, ki v končnem številu enostavnih navodil privede do rešitve zastavljenega problema.
+	<li>Algoritem je koračna procedura reševanja problemov.
+	<li>Algoritem je učinkovita metoda in je  seznam natančno opisanih korakov za izvršitev naloge.
+	<li>Algoritem je določen s tremi elementi:
+	<ol type="1">
+		<li>Začetno stanje algoritma; to je problemska situacija, s katero smo soočeni.
+		<li>Natančno določeno končno zaporedje korakov, ki peljejo do rešitve problema.
+		<li>Končno stanje algoritma.
+	</ol>
+	<li>Pomemben pogoj za algoritem je tudi zahteva, da se mora vedno končati in ponuditi rezultat.
+	<li>Reševanje problemov s pomočjo algoritmov imenujemo tudi algoritmično razmišljanje.
+	<li>Za algoritmično razmišljanje je značilno:
+	<ol type="1">
+		<li>soočenje s problemom ali predstavitev problema
+		<li>analiza problema; razmislek o značilnostih problema in o možnih rešitvah
+		<li>drobitev problema na manjše probleme
+		<li>iskanje in oblikovanje rešitev za posamične manjše probleme - v tej fazi že lahko pišemo posamezne dele programske kode
+		<li>sestavljanje delnih rešitev za posamične manjše probleme v zaporedje korakov, ki privede do rešitve izhodiščnega problema - v tej fazi že lahko sestavljamo posamezne dele programske kode v program
+		<li>zaporedno izvajanje posameznih korakov reševanja izhodiščnega problema - samo en problem na enkrat in ne hkrati več problemov - v tej fazi programsko kodo že lahko prevedemo in program zaženemo
+	</ol>
+	<li><b>Primer:</b>
+	<ol type="1">
+		<li><b>Predstavitev problema ali naloge:</b> Napiši program, ki prebere celi števili a in b ter ugotovi, ali je število a delitelj števila b.
+		<li><b>Analiza problema:</b> Vprašamo se, kaj vse bomo morali postoriti za rešitev problema.
+			<ol type="1">
+				<li>V tem primeru bomo morali prebrati dve števili.
+				<li>Nato bomo morali ugotoviti, če a deli b.
+				<li>Iz matematike se spomnimo, da bo a delil b,	 če bo ostanek pri deljenju enak 0.
+				<li>Zato bomo b delili z a.
+				<li>Preverili bomo, če je ostanek res enak nič.
+				<li>Na koncu poskrbimo še za izpis ugotovitve; ali a deli b ali ne.
+			</ol>
+		<li><b>Drobitev na manjše probleme:</b> Manjši problemi, ki jih moramo v tem primeru rešiti	, so:
+			<ol type="1">
+				<li>prebrati število b (deljenec)
+				<li>prebrati število a (delitelj)
+				<li>preveriti, ali je ostanek deljenja b/a res enak 0
+				<li>izpisati ugotovitev, ki je odvisna od rezultata deljenja; zato bosta obstojali dve možnosti; zato bo potrebna odločitev
+			</ol>
+		<li><b>Iskanje in oblikovanje rešitev za manjše probleme:</b>
+			<ol type="1">
+				<li>prebrati število b (deljenec)</br></br><IMG SRC="31prog02.jpg" ALT="?" BORDER=1></br></br>
+				<li>prebrati število a (delitelj)</br></br><IMG SRC="31prog03.jpg" ALT="?" BORDER=1></br></br>
+				<li>preveriti, ali je ostanek deljenja b/a res enak 0</br></br><IMG SRC="31prog04.jpg" ALT="?" BORDER=0></br></br>
+				<li>izpisati ugotovitev, ki je odvisna od rezultata deljenja; zato bosta obstojali dve možnosti; zato bo potrebna odločitev</br></br><IMG SRC="31prog05.jpg" ALT="?" BORDER=1></br></br>
+			</ol>
+		<li><b>Zaporedno izvajanje posameznih korakov algoritma: </b>zagon programa, ki ga napišemo s pomočjo algoritma.
+	</ol>
+</ol>
+
+<big>VAJA 31: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši program "Delitelj". Pomagaj si s sliko.</br></br><IMG SRC="31prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="31koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek31.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek31.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je algoritem?<br>
+2. Kateri trije elementi določajo algoritem?<br>
+3. Katera je pomembna zahteva za algoritem?<br>
+4. Kaj je algoritmično razmišljanje?<br>
+5. Opiši problem, ki smo ga navedli za primer reševanja problemov s pomočjo algoritma v tej učni enoti.<br>
+6. Naštej manjše probleme, na katere smo razstavili naš začetni problem.<br>
+7. Katero kjižnico smo uvozili pri pisanju progrma v tej učni enoti?<br>
+8. Katero metodo iz uvožene knjižnice smo uporabili v programu v tej učni enoti?<br>
+9. Kateri primerjalni operator smo uporabili za ugotavljanje deljivosti deljenca z deliteljem?<br>
+10. Kateri pogojni stavek smo uporabili za izpis ustreznega sporočila na koncu izvajanja programa v tej učni enoti?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_5_pogojni-92455a38/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani - prvi vir.</A><br>
+<A HREF="http://up.fmf.uni-lj.si/java_0_programski_jeziki_splosno_osnove-ecb2eec1/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani - drugi vir.</A><br>
+<A HREF="http://en.wikipedia.org/wiki/Algorithm">Angleška verzija Wikipedije</A>
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,11 @@
+class Vrsta20Cetrtic { 
+   public static void main(String[] args)   {
+      int i = 1  //deklariranje in inicializacija števca
+      while (i < 20+1) //pogoj je v tem primeru v obliki primerjanja - "manjši kot"
+        {
+        System.out.print(" "+i); izpišemo presledek in i
+        i+; //števec poveèamo za ena - inkrement
+        }
+      System.outprintln(".");//izpišemo piko
+   }
+}

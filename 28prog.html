@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>TABELE (28)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>TABELE ALI VEČKRATNE VREDNOSTI (28)
+<p><em><font color="red">Jeza in naglica ne prineseta dobrega nasveta.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>TABELE ALI VEČKRATNE VREDNOSTI </big>
+</center>
+
+<ol type="1">
+	<li>Tabele ali večkratne vrednosti so spremenljivke, ki lahko pod istim imenom privzamejo več različnih vrednosti.
+	<li>Primer: spremenljivka z imenom "dan" lahko zavzame sedem različnih vrednosti. Te so ponedeljek, torek, sreda, četrtek, petek, sobota in nedelja.
+	<li>Vsako vrednost spremenljivke dan lahko zapišemo tudi posebej: dan[0]=ponedeljek, dan[1]= torek, dan[2]=sreda, dan[3]=četrtek, dan[4]=petek, dan[6]=sobota, dan[7]=nedelja.
+	<li>Vse vrednosti spremenljivke "dan" imajo ime "dan".
+	<li>Med seboj se ločijo vrednosti spremenljivke "dan" le po številu v oglatem oklepaju [].
+	<li>To število v oglatem oklepaju imenujemo kazalec, saj nam pokaže, katera konkretna vrednost spremenljivke "dan" izmed več razpoložljivih nas zanima.
+	<li>Kazalec se po latinsko imenuje tudi indeks. Indeks je tudi najbolj pogosta oznaka za število v oklepaju imena tabele.
+	<li>Tabele zato pogosto imenujemo tudi indeksirane spremenljivke.</br></br><IMG SRC="28prog03.gif" ALT="?" BORDER=1></br></br>
+	<li>Najpogostejše situacije, ko je uporaba tabel zelo primerna:
+	<ol type="1">
+		<li>kadar želimo shraniti več podatkov iste vrste (imena dni, mesecev, osebna imena...)
+		<li>kadar želimo obdelati večje število podatkov na enak način
+	</ol>
+	<li>Indeks tabele zavzame vrednosti od 0 do n-1. n je število elementov tabele.
+	<li>Če vsebuje tabela 7 elementov, velja: n-1=7-1=6. Indeksi torej tečejo od 0 do 6.
+	<li>Pri deklariranju ali napovedi spremeljivke v obliki tabele moramo podati torej več podatkov:
+	<ol type="1">
+		<li>podatkovni tip posameznega elementa tabele (za tabelo "dan[]" je to niz, saj gre za imena dni)
+		<li>ime tabele (za tabelo "dan[]" je to "dan")
+		<li>število elementov tabele (za tabelo "dan[]" je to število 7, saj ima teden 7 dni)
+	</ol>
+	<li>V javi lahko rezerviramo prostor v pomnilniku za tabelo šele potem, ko poznamo velikost tabele, torej število elementov.
+	<li>Spreminjanje velikosti tabele potem, ko smo jo že deklarirali, ni več mogoče.
+	<li>Velikost tabele je odvisna od števila elementov, ki jih tabela vsebuje.
+	<li>V Javi imamo na voljo metodo, s katero lahko ugotovimo število elementov, ki jih tabela vsebuje.
+	<li>Ta metoda se imenuje "length".
+	<li>Angleška beseda "length" pomeni dolžina. Ta lastnost je torej dolžina tabele.
+</ol>
+
+<big>VAJA 28: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Tabele". Pomagaj si s sliko.</br></br><IMG SRC="28prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="28koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek28.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek28.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="28prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je tabela?<br>
+2. Kaj je indeks tabele?<br>
+3. Kdaj so tabele še posebej praktične za uporabo?<br>
+4. Kako se imenuje tabela, ki smo jo izdelali v vaji te učne enote?<br>
+5. Koliko elementov ima tabela, ki smo jo izdelali v vaji te učne enote? <br>
+6. Katero zanko smo uporabili v vaji te učne enote?<br>
+7. Kako je označen indeks tabele v zanki te učne enote?<br>
+8. Kolikšna je začetna vrednost in kolikšna je končna vrednost indeksa v vaji te učne enote?<br>
+9. Kakšna je naloga zanke, ki smo jo uporabili v vaji te učne enote?<br>
+10. Zapiši lastnost oziroma metodo, ki vrne velikost tabele.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_7_tabele-05fb2363/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/arrays.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>VNOS PODATKOV (3)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>VNOS OZIROMA BRANJE PODATKOV (3)
+<p><em><font color="red">Kdor hiti, spregleda svoje priložnosti.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+
+<center>
+<big>VNOS OZIROMA BRANJE PODATKOV</big>
+</center>
+
+<ol type="1">
+	<li>Program v Javi prebere podatke preko vnosnega okna.
+	<li>Vnosno okno je že vključeno v knjižnici. Knjižnica vsebuje različne predmete ali objekte, ki se imenujejo v Javi razredi.
+	<li>Vnosno okno je torej shranjeno v knjižnici kot razred.
+	<li>Vnosno okno nam lahko služi za vnos podatkov v program ali branje podatkov, lahko pa nam služi tudi za izpis podatkov oziroma rezultatov.
+	<li>Ti dve nalogi pogvornega okna se imenujeta v Javi metodi.
+	<li>Danes si bomo ogledali, na kakšen način lahko vnesemo podatke v program Java.
+	<li>Lahko rečemo tudi, da bomo spoznali, kako lahko program Java prebere podatke, ki jih lahko potem uporabi za nadaljnje delo.
+	<li>Zaženi okolje "drjava" in vtipkaj izvorno kodo, ki jo vidiš na sliki. Dokument shrani pod imenom, ki ga vidiš na sliki - "ImePriimek03.java" naj bosta tvoje ime in tvoj priimek. </br></br><IMG SRC="03prog01.jpg" ALT="?" BORDER=0></br></br>
+	<li> Datoteko "ImePriimek03.java" še prevedi. </br></br><IMG SRC="03prog02.jpg" ALT="?" BORDER=0></br></br>
+	<li>Prevedeno datoteko "ImePriimek03.java" poženi. </br></br><IMG SRC="03prog03.jpg" ALT="?" BORDER=0></br></br>
+	<li>V pozivno okno, ki se pojavi, vtipkaj sporočilo, ki ga vidiš na sliki, in klikni OK. </br></br><IMG SRC="03prog04.jpg" ALT="?" BORDER=0></br></br>
+	<li>Program se še odzove z odzivnim oknom. </br></br><IMG SRC="03prog05.jpg" ALT="?" BORDER=0></br></br>
+</ol>
+
+<big>OPIS IZVORNE KODE PRIMERA V TEJ UČNI ENOTI </big>
+</center>
+
+	<ol type="1">
+		<li><font color="red">import javax.swing.JOptionPane;</font>: z ukazom "import" (uvozi) vključimo v naš razred "BeriPisi" še razred "JOptionPane", ki predstavlja vnosno okno.
+		<li>Razred "JOptionPane" uvozimo v naš programček iz knjižnice "javax.swing.".
+		<li><font color="red">class BeriPisi {</font>: definiramo razred ali naš programček z naslovom "BeriPisi". Zaviti oklepaj označuje začetek kode, ki jo vsebuje naš razred "BeriPisi".
+		<li><font color="red">public static void main (String[] args) {</font>: definiramo metodo "main". V okroglih oklepajih je zapisana spremenljivka, ki jo ta metoda potrebuje za delovanje. Beseda "String" pomeni, da gre za niz. Niz je tip spremenljivke, ki ga uporabljamo za delo z abecedo in s posebnimi znaki. Zaviti oklepaj označuje začetek kode, ki jo vsebuje metoda "main".
+		<li><font color="red">String besedilo = JOptionPane.showInputDialog("Vnesi besedilo: ");</font>: deklarirali smo spremenljivko tipa "niz" (String) in ji dali ime "besedilo". Tej spremenljivki bomo priredili vrednost, ki jo bomo ob zagonu programa vpisali v vnosno okno.
+		<li><font color="red">JOptionPane.showMessageDialog(null, besedilo);</font>: z uporabo razreda "JOptionPane.showMessageDialog" bomo izpisali vrednost spremenljivke "besedilo" v sporočilnem oknu.
+		<li>Na koncu kode sta še dva zavita oklepaja. Prvi zaviti oklepaj sklene kodo metode "main". Drugi zaviti oklepaj sklene kodo razreda "BeriPisi".
+	</ol>
+
+<big>VAJA 3: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "BeriPisi". Sledi navodilom na slikah.
+		<li>Kodo lahko tudi kopiraš iz <A HREF="03koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek03.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek03.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Zapiši ime knjižnice, iz katere smo v primeru te učne enote uvozili razred, ki smo ga potrebovali.<br>
+2. Zapiši oznako razreda, ki smo ga v primeru te učne enote uvozili v razred, ki smo ga izdelali sami.<br>
+3. Zapiši oznako razreda (oziroma programčka), ki smo ga izdelali v tej učni enoti.<br>
+4. Zapiši oznako metode, ki omogoča vnos podatkov v program Jave preko vnosnega okna.<br>
+5. Zapiši oznako metode, ki omogoča izpis podatkov v programu Java preko vnosnega okna.<br>
+6. Zapiši argument, ki smo ga uporabili v našem primeru za vnos podatkov v program.<br>
+7. Zapiši tip spremenljivke, ki smo jo deklarirali v primeru te učne enote.<br>
+8. Zapiši argument, ki smo ga uporabili v našem primeru za izpis podatkov.<br>
+9. Zapiši vrednost spremenljivke "besedilo", ki smo jo priredili v primeru te učne enote.<br>
+10. S pomočjo besedila te učne enote zapiši, kakšna je bistvena razlika med vnosnim oknom in sporočilnim oknom.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/#h2_3">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A> Oglej si prosojnice.<br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

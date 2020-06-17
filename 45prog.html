@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>ENOSTAVNI TIPI (45)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>ENOSTAVNI PODATKOVNI TIPI (45)
+<p><em><font color="red">Hvaležnost spodbuja dobroto.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>ENOSTAVNI PODATKOVNI TIPI</big>
+</center>
+
+<ol type="1">
+	<li>Podatkovni tip ali tip podatka je ena od lastnosti spremenljivke.
+	<li>Pri spremenljivki lahko določimo tri lastnosti: njeno ime, vrednost in tip podatka oziroma tip te vrednosti.
+	<li>Primer: spremenljivka, ki predstavlja števec zanke, ima lahko ime "i", njena vrednost pa teče od začetne vrednosti, denimo 0, do končne vrednosti, denimo 100. Vrednosti števca i od 1 do 100 so seveda cela števila. Tip podatka za števec "i" je torej celo število ali "integer" oziroma "int".
+	<li>Ko deklariramo števec "i" in mu določimo tip "int", povemo računalniku, da bodo edine veljavne vrednosti števca zgolj in samo cela števila.
+	<li>Ko določimo v deklaraciji spremenljivke njen podatkovni tip, s tem preprečimo, da bi shranjevali na mestu pomnilnika, ki je rezervirano za to spremenljivko, vrednost kakšne druge vrste.
+	<li>Primer: če smo števec "i" deklarirali kot celo število "int", računalnik ne bo prepoznal in pravilno shranil podatka, če bomo vnesli za vrednost "i" kakšen znak, niz, ali decimalno število.
+	<li>Glede na značaj tipov podatkov delimo dve veliki skupini programskih jezikov:
+	<ol type="1">
+		<li>Jeziki s statičnimi tipi spremenljivk: tip spremenljivke je vezan na njeno ime. Ko spremenljivko enkrat deklariramo, je njen tip ves čas enak; tej spremenljivki lahko prirejamo le vrednosti, katerih podatkovni tip je enak deklariranemu. V to skupino jezikov sodi Java.
+		<li>Jeziki z dinamičnimi tipi spremenljivk: tip spremenljivke je vezan na njeno vsakokratno vrednost. Ob deklaraciji spremenljivke ne določimo posebej tipa, kar pomeni, da je mogoče hranjenje vrednosti kateregakoli tipa podatkov. Primer takega jezika je Python.
+	</ol>
+	<li>Če vsebuje tip podatka samo eno vrsto veljavnih podatkov, govorimo o enostavnih podatkovnih tipih.
+	<li>Primer: v programskem jeziku Java je opredeljen podatkovni tip "int", ki predstavlja cela števila velikosti do 32 bitov oziroma števila velikosti od -2.147.483,648 do 2.147.483.647. Hkrati s tem tipom podatkov so opredeljene tudi osnovne operacije, ki jih lahko izvedemo nad vrednostmi spremenljivk tega podatkovnega tipa.
+	<li>Podatkovni tip "int" je torej enostavni podatkovni tip.
+	<li>Uporaba podatkovnih tipov v programiranju omogoča nadzor pravilnosti računalniških programov z vidika dostopa do podatkov in upravljanja z njimi.
+	<li>Java premore osem enostavnih tipov podatkov: "byte", "short", "int", "long", "float", "double", "boolean" in "char".
+	<li>Primer:
+	<li><b>Besedni opis problema in rešitve.</b>
+		<ul type="bullet">
+			<li><b>"Zapiši program, ki bo izračunal odstotni delež prvega števila glede na drugo število. Program mora najprej pozvati uporabnika k vnosu prvega števila, deleža, in nato še k vnosu števila, ki predstavlja celoto in glede na katerega delež računamo":</b> Vprašamo se, kaj vse bomo morali postoriti za rešitev problema in to opišemo v nekaj stavkih. Potek reševanja problema poskusimo premisliti čim bolj natančno.
+				<ol type="1">
+					<li>Pozovi uporabnika k vnosu prvega števila, ki predstavlja del oziroma delež.
+					<li>Pozovi uporabnika k vnosu drugega števila, ki predstavlja celoto.
+					<li>Izračunaj odstotek ali delež prvega števila (dela) glede na drugo število (celoto). Odstotek izračunamo tako, da količnik deljenja dela s celoto pomnožimo s sto.
+					<li>V sporočilnem oknu posreduj izračunano vrednost.
+					<li>Izračunano vrednost izpiši tudi v interaktivnem oknu delovnega okolja drjava.
+				</ol>
+		</ul>
+		<li><b>Diagram poteka</b>
+		<ul type="bullet">
+			<li><b>"Zapiši program, ki bo izračunal odstotni delež prvega števila glede na drugo število. Program mora uporabnika najprej pozvati uporabnika k vnosu prvega števila, deleža, in nato še k vnosu števila, ki predstavlja celoto in glede na katerega delež računamo":</b>
+			</br></br><IMG SRC="45prog03.jpg" ALT="?" BORDER=1></br></br>
+		</ul>
+</ol>
+
+<big>VAJA 45: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Odstotek". Pomagaj si s sliko.</br></br><IMG SRC="45prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="46koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek45.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek45.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="45prog02.jpg" ALT="?" BORDER=1></br></br>
+		<li><font color="red">Nariši v zvezek diagram poteka v tej učni enoti.</font>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Zapiši tri lastnosti enostavne spremenljivke.<br>
+2. Kaj nam pove tip podatka posamezne enostavne spremenljivke?<br>
+3. Kateri dve skupini programskih jezikov ločimo glede na značaj tipov podatkov?<br>
+4. V katero skupino jezikov sodi Java?<br>
+5. Kakšnega značaja so tipi podatkov v Javi?<br>
+6. Kaj je značilnost enostavnih podatkovnih tipov?<br>
+7. Naštej enostavne podatkovne tipe, ki jih vsebuje programski jezik Java.<br>
+8. Kaj omogoča uporaba podatkovnih tipov pri programiranju?<br>
+9. Kateri aritmetični operaciji smo uporabili v primeru te učne enote?<br>
+10. Naštej vse metode, ki jih zaslediš v primeru te učne enote in jim pripiši njihovo nalogo.<br>
+11. Kateri enostavni podatkovni tip smo uporabili v primeru te učne enote?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://en.wikipedia.org/wiki/Data_type">Podatkovni tipi v angleški različici Wikipedie.</A><br>
+<A HREF="http://en.wikipedia.org/wiki/Variable_(programming)">Spremenljivke v angleški različici Wikipedie.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

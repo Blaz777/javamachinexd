@@ -1,0 +1,15 @@
+class StavekIfElse {
+     public static void main(String args){
+          int prvi = 1, drugi = 2, rezultat;  
+          boolean pogojIN; //tole je logièna spremenljivka, ki je pogoj, vkljuèen v stavek IF
+ 
+          pogojIN = ((prvi == 1) && (drugi == 1)); //vrednost pogoja je "false"
+          if (pogojIN) System.out.println("1. Tale stavek se izpiše le tedaj, ko je pogoj v stavku \"if-else\" izpolnjen!");
+            else System.out.println("2. Tale stavek se izpiše le tedaj, ko pogoj v stavku \"if-else\" ni izpolnjen!");
+
+          pogojIN = ((prvi == 1) && (drugi == 2)); //vrednost pogoja je "true"
+          if (pogojIN) System.out.println("1. Tale stavek se izpiše le tedaj, ko je pogoj v stavku \"if-else\" izpolnjen!");
+            ese System.out.println("2. Tale stavek se izpiše le tedaj, ko pogoj v stavku \"if-else\" ni izpolnjen!");            
+     }
+}
+

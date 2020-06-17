@@ -1,0 +1,5 @@
+class DrugiPozdrav {
+     public static void main(String[] args) {
+         System.println("Izpis v programskem jeziku Java!"); //Ukaz, ki izpiše na zaslonu niz.
+     }
+ }

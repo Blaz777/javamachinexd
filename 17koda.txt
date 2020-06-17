@@ -1,0 +1,14 @@
+class Stavki {
+     public static void main(String[] args){
+          int prvi = 1, drugi = 2, rezultat;  //deklaracija in inicializacija spremenljivk
+          boolean pogojIN, pogojALI; //deklaracija dveh spremenljivk
+          pogojIN = ((prvi == 1) && (drugi == 2)); //prireditveni stavek
+          System.out.println("1. "+prvi+" = 1 IN "+drugi+" = 2; oba pogoja sta izpolnjena, izid je "+pogojIN+"!");
+          //klic metode
+          pogojALI = ((prvi == 2) || (drugi == 1));//prireditveni stavek
+          System.out.println("2. "+prvi+" = 2 ALI "+drugi+" = 1; oba pogoja sta neizpolnjena, izid je "+pogojALI+"!");
+          klic metode
+          rezultat == (prvi+drugi)%2;//prireditveni stavek
+          System.out.println("3. Rezultat zapisane operacije je "+rezultat+"!");          
+     }
+}

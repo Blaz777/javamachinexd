@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>TOLMAČ (43)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>TOLMAČ IN TOLMAČENJE (43)
+<p><em><font color="red">Prevelika naglica zapravi veliko časa.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>TOLMAČ IN TOLMAČENJE </big>
+</center>
+
+<ol type="1">
+	<li>Tolmač je računalniški program.
+	<li>Tolmač izvaja oziroma izvršuje ukaze, ki so zapisani v računalniškem programu.
+	<li>Tolmač mora v osnovi prevesti zvorno kodo vsakokrat, ko želimo pognati program.
+	<li>Tolmač tudi ne ustvari nove, neodvisne in povsem samostojno izvršljive datoteke.
+	<li>Jasno razločevanje med tolmači in prevajalniki ni mogoče, ker vključuje tolmačenje izvorne kode nujno tudi pretvarjanje izvorne kode v strojno kodo ozioma v tako kodo, ki jo računalnik lahko razume in izvede.
+	<li>Tolmači so programi, ki lahko delujejo na tri načine:
+	<ol type="1">
+		<li>neposredno izvršijo izvorno kodo
+		<li>prevedejo izvorno kodo v kakšno izvršljivo vmesno kodo in takoj izvršijo program
+		<li>takoj izvedejo shranjeno predhodno prevedeno kodo, ki jo je prevedel prevajalnik; ta prevajalnik pa je le del tolmača
+	</ol>
+	<li>Programski jezik Java deluje na tretji način.
+	<li>Slabost tolmačenja je ta, da je nekoliko počasnejše od prevajanja.
+	<li>Tolmačenje poteka ob vsakem zaganjanju programa, prevajanje pa le enkrat.
+	<li>Rezultat prevajanja je samostojna izvršljiva datoteka, pri tolmačenju pa tega ni.
+	<li>Tudi čas dostopa do spremenljivk, ki jih vsebuje program, je pri tolmačenju daljši.
+	<li>Primer:
+	<li><b>Besedni opis problema in rešitve.</b>
+		<ul type="bullet">
+			<li><b>"Nariši trikotnik, ki ga kaže slika":</br></br><IMG SRC="43prog02.jpg" ALT="?" BORDER=1></br></br></b> Vprašamo se, kaj vse bomo morali postoriti za rešitev problema in to opišemo v nekaj stavkih. Potek reševanja problema poskusimo premisliti čim bolj natančno.
+			<li>Analizirajmo problem. Kaj bo program moral točno storiti?
+
+			<TABLE ALIGN="center" BORDER=0 border=1 cellspacing=0 cellpadding=0 width="80%">
+			<TR ALIGN="left" VALIGN="middle">
+				<TD></br></br><IMG SRC="43prog03.jpg" ALT="?" BORDER=1></br></br></TD>
+				<TD>
+					<ol type="1">
+						<li>V prvi vrstici zapiše 4 presledke in 1 zvezdico.
+						<li>V drugi vrstici zapiše 3 presledke in 3 zvezdico.
+						<li>V tretji vrstici zapiše 2 presledka in 5 zvezdic.
+						<li>V četrti vrstici zapiše 1 presledek in 7 zvezdic.
+						<li>V peti vrstici zapiše 0 presledkov in 9 zvezdic.
+					</ol></br>
+					<ol type="1">
+						<li>Poiskati moramo splošni pravili, ki povezujeta številko vrstice s številom presledkov in zvezdic v njej.
+						<li>V vsaki vrstici najprej izpišemo število presledkov, ki je enako velikosti trikotnika v številu vrstic, od katere odštejemo številko vrstice. Število presledkov je enako velikosti trikotnika - številka vrstice, ki jo izpisujemo.
+						<li>Izpis vsake vrstice nadaljujemo z zvezdicami. Število zvezdic v vrstici je enako dvakratniku številke trenutne vrstice, ki mu odštejemo število 1.
+						<li>Splošni pravili bomo lahko uporabili pri določanju parametrov zank v našem programu.
+					</ol>
+				</TD>
+			</TABLE>
+			<li>
+
+				<ol type="1">
+					<li>Ker gre za več ponavljanj, bomo izbrali več zank.
+					<li>Prva zanka bo skrbela za pisanje posamezne vrstice in za preskok v novo vrstico.
+					<li>Druga zanka bo pisala najprej presledke v posamezno vrstico.
+					<li>Tretja zanka bo pisala zvezdice v poamezno vrstico.
+				</ol>
+		</ul>
+</ol>
+
+<big>VAJA 43: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Trikotnik". Pomagaj si s sliko.</br></br><IMG SRC="43prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="43koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek43.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek43.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je tolmač?<br>
+2. Kakšna je naloga tolmača?<br>
+3. Zakaj jasno razločevanje med tolmači in prevajalniki ni mogoče?<br>
+4. Kakšna je slabost tolmačenja v primerjavi s prevajanjem?<br>
+5. Katera sta dva razloga za počasnost tolmačenja?<br>
+6. Opiši bistvene razlike med tolmačenjem in prevajanjem programov.<br>
+7. Koliko zank in katere zanke vsebuje program v primeru te učne enote?<br>
+8. Katero knjižnico smo uvozili v program v primeru te učne enote?<br>
+9. Katero metodo iz uvožene knjižnice v primeru te učne enote smo uporabili?<br>
+10. Naštej imena in tipe spremenljivk, ki smo jih deklarirali v primeru te učne enote.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://en.wikipedia.org/wiki/Interpreter_(computing)">Tolmači v angleški različici Wikipedie.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,19 @@
+class Tabele {
+     public static void main(String[] args) {
+          String [] dan = new String[7];      // deklariramo tabelo in dodelimo pomnilniški prostor za sedem besed
+            
+          dan[0] = "ponedeljek; // inicializiramo prvi element tabele
+          dan[1] = "torek"; // inicializiramo drugi element tabele
+          dan[2] = "sreda"; // inicializiramo tretji element tabele
+          dan[3] = "èetrtek"; inicializiramo èetrti element tabele
+          dan[4] = "petek"; // inicializiramo peti element tabele
+          dan[5] = "sobota"; // inicializiramo šesti element tabele
+          dan[6] = "nedelja"; // inicializiramo sedmi element tabele
+          
+          int i;
+          for(i=0; i<=6; i++){
+          System.out.println(i+1+". Element na mestu z indeksom "+i+" v polju tabele \"dan\" je " +dan[i]+"!");
+          }
+          System.out.println("Tabela "dan\" vsebuje "+dan.length+" elementov!"); // izpis velikosti tabele
+     }
+} 

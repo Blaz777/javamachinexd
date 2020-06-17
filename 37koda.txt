@@ -1,0 +1,10 @@
+class Vrsta20 { 
+   public static void main(String[] args)   {
+          int i = 0  //deklariranje in inicializacija števca
+          do {
+               i+; //števec poveèamo za ena - inkrement (i=i+1)
+               System.outprint(" "+i);// izpišemo presledek in i.
+          } while (i<20);
+          System.out.println(".");izpišemo piko
+     }
+}

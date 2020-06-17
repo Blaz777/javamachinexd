@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>DVODIMENZIONALNE TABELE (29)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>DVODIMENZIONALNE TABELE (29)
+<p><em><font color="red">Naglica se spotakne ob lastne pete.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>DVODIMENZIONALNE TABELE</big>
+</center>
+
+<ol type="1">
+	<li>Tabele, ki smo jih spoznali v prejšnji učni enoti, omogočajo hranjenje skupin sorodnih podatkov.
+	<li>Kot primer smo spoznali tabelo "dan", ki je seznam dni v tednu.
+	<li>Ker smo opazovali dneve v enem samem tednu, smo jih lahko med seboj razlikovali že s pomočjo enega samega indeksa.
+	<li>Te opazovane dneve smo lahko razporedili enega za drugim v ravni črti v eni sami smeri, denimo vodoravni smeri.</br></br><IMG SRC="28prog03.gif" ALT="?" BORDER=1></br></br>
+	<li><b>Primer 1:</b> Janez se je določil za enotedensko obiskovanje nekaterih svojih prijateljic in prijateljev. Vsak dan je obiskal drugega prijatelja. Naredimo tako tabelo, ki bo imela vsebovala imena obiskanih prijateljev po posameznih dnevih v tednu. Tabelo poimenujmo "obiskiEnTeden".
+	<pre>
+	             pon   tor   sre    čet    pet    sob   ned
+     <font color="red"><b>                0     1     2      3      4      5     6</b></font>
+	             Tine  Tone  Jure   Meta   Mara   <font color="blue"><b>Maja</b></font>  Minka
+	</pre>
+	<li>Če bi želeli hraniti podatke po dnevih, ki bi pripadali trem tednom, ki si sledijo, bi lahko te tri tedne postavili enega ob drugega.
+	<li><b>Primer 2:</b> Janez se je določil za tritedensko obiskovanje vseh svojih prijateljic in prijateljev. Vsak dan je obiskal drugega prijatelja. Naredimo tako tabelo, ki bo imela vsebovala imena obiskanih prijateljev po posameznih dnevih v posameznem tednu. Poimenujmo tabelo "obiskiTrijeTedni".
+	<pre>
+	             pon        tor      sre      čet      pet     sob       ned
+    <font color="red"><b>                 0          1        2        3        4       5         6</b></font>
+	teden1  <font color="orange"><b>0</b></font>    Tine       Tone     Jure     Meta     Mara    Maja      Minka
+	teden2  <font color="orange"><b>1</b></font>    Mojca      Mare     Jože	  Jure     Joco    Jaka      Jošt
+	teden3  <font color="orange"><b>2</b></font>    Jolanda    Nejka    Tina     Teja     <font color="blue"><b>Tadeja</b></font>  Mateja    Irena
+	</pre>
+	<li>Tudi ta podatkovna struktura je tabela, ki pa se razlikuje od zgornje tabele.
+	<li>Če smo v tabeli "obiskiEnTeden" želeli izluščiti vsebino posameznega elementa ali mesta v tabeli, smo potrebovali le en podatek.
+	<li>Podati smo morali vrednost indeksa, ki kaže na mesto v tabeli "obiskiEnTeden", katerega vsebino želimo obravnavati.
+	<li>Če nas zanima, koga je Janez obiskal v soboto, uporabimo indeks "5" in vsebina lokacije, na katero kaže ta indeks, je "Maja".
+	<li>V Javi storimo to na tak način: <font color="red"><b>vsebina = obiskiEnTeden[5];</b></font>
+	<li>Če pa želimo izvedeti s pomočjo tabele "obiskiTrijeTedni", koga je Janez obiskal v petek ob priliki svoje tritedenske turneje, pa ugotovimo, da je v petek obiskal tri prijatelje, saj so na voljo trije petki.
+	<li>Za natančno določitev mesta v tej tabeli moramo povedati še, kateri teden od treh obstoječih imamo v mislih.
+	<li>Potrebujemo torej še en podatek.
+	<li>Ta podatek je števec tednov, ki nam pokaže na želeni teden.
+	<li>Potrebujemo torej še en indeks; poleg indeksa dni imamo sedaj še indeks tednov.
+	<li>Če nas zanima, koga je Janez obiskal v petek v tretjem tednu svojega obiskovanja, uporabimo indeks dni "4" in indeks tednov "2". Vsebina lokacije, na katero kažeta ta dva indeksa, je "Tadeja".
+	<li>V Javi storimo to na tak način: <font color="red"><b>vsebina = obiskiTrijeTedni[4][2];</b></font>
+	<li>Ker potrebujemo za delo s tabelo "obiskiTrijeTedni" dva indeksa, imenujemo to tabelo dvodimenzionalna tabela.
+	<li>Če smo torej pri programiranju obdelave enodimenzionalnih tabel potrebovali eno zanko, bomo za obdelavo podatkov, shranjenih v dvodimenzionalnih tabelah, potrebovali dve zanki.
+</ol>
+
+<big>VAJA 29: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "enaDimenzija". Pomagaj si s sliko.</br></br><IMG SRC="29prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="29koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek29.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek29.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="29prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je naloga tabel?<br>
+2. Koliko indeksov potrebujejo za delo s podatki enodimenzionalne tabele?<br>
+3. Koliko znaša indeks sobote v primeru 1 te učne enote?<br>
+4. Kateri dan po vrsti v tednu je sobota, če začnemo dan s ponedeljkom?<br>
+5. Koga je obiskal Janez v soboto v primeru 1 v tej učni enoti?<br>
+6. Koliko indeksov potrebujejo dvodimenzionalne tabele?<br>
+7. S kakšno barvo je označen indeks posameznih dni v primeru 2 v tej učni enoti?<br>
+8. S kakšno barvo je označen indeks tednov v primeru 2 v tej učni enoti?<br>
+9. Koga je obiskal Janez v petek v tretjem tednu v primeru 2 v tej učni enoti?<br><br>
+10. Koliko zank potrebujemo za delo z dvodimenzionalnimi tabelami?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_8a_tabele_konstante-4940e482/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/arrays.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

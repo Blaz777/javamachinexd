@@ -1,0 +1,10 @@
+class Vrsta20Petic { 
+   public static void man(String[] args)   {
+          int i = 1;  deklariranje in inicializacija števca
+          do {
+               System.out.print(" "+i);// izpišemo presledek in i.
+               i++; //števec poveèamo za ena - inkrement (i=i+1)
+          } wile (i<20+1);
+          System.out(".");//izpišemo piko
+     }
+}

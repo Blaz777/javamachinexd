@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>PODAJANJE ALGORITMOV (33)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>NAČINI PREDSTAVITVE ALI PODAJANJA ALGORITMOV (33)
+<p><em><font color="red">Kdor se v naglici zmoti, dolgo časa obžaluje.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>NAČINI PREDSTAVITVE ALI PODAJANJA ALGORITMOV</big>
+</center>
+
+<ol type="1">
+	<li>Algoritme lahko predstavimo na različne načine:
+	<ol type="1">
+		<li><b>Besedni opis problema in rešitve.</b>
+		<ul type="square">
+			<li>Če problem opišemo tako, kot ga razumemo, in z besedami, ki jih poznamo, je problem že nekoliko bolj jasen.
+			<li>Tudi zamišljeno rešitev problema lahko opišemo z besedami v obliki stavkov.
+			<li>Prva težava besednih opisov problemov je ta, da ljudje različno razumemo pomene posameznih besed, pa tudi pomene stavkov oziroma sporočil kot celote.
+			<li>Druga težava je nenatančna določitev zaporedja korakov reševanja problema pri besednem opisu.
+			<li>To dejstvo je vzrok mnogih nejasnosti, ki spremljajo tak način predstavitve algoritma.
+			<li>Nejasnosti so lahko vzrok za nesporazume in napake pri reševanju problemov.
+			<li><b>Primer "Prestopno leto":</b>Napiši program, ki prebere letnico ter ugotovi, ali je prebrano leto tudi prestopno leto. Vprašamo se, kaj vse bomo morali postoriti za rešitev problema in to opišemo v nekaj stavkih.
+				<ol type="1">
+					<li>Prebrati moramo eno število - letnico, za katero nas zanima, če je  to prestopno leto.
+					<li>Prebrani podatek, ki je podatkovni tip "niz", moramo pretvoriti v število.
+					<li>Ugotoviti moramo, ali je prebrano leto prestopno.
+					<li>Izpisati moramo odgovor.
+				</ol>
+		</ul>
+		<li><b>Psevdokoda</b>
+		<ul type="square">
+			<li>Psevdokoda je strukturirani način predstavitve algoritma.
+			<li>Stukturiranost psevdokode je odgovor na problem podajanja algoritma z besednim opisom problema in rešitve.
+			<li>Strukturiranost psevdokode pomeni, da so pomeni posameznih besed v kodi natančno določeni in dogovorjeni.
+			<li>Strukturiranost psevdokode pomeni, da je zaporedje korakov reševanja problema natančno določeno.
+			<li>Predpona "psevdo" v sestavljanki "psevdokoda" pomeni "lažno" ali "navidezno".
+			<li>Psevdo koda je navidezna koda, saj poskuša oponašati pravo kodo programskih jezikov.
+			<li><b>Primer "Prestopno leto":</b> Pri opisovanju problema si pomagamo z besedami, ki spominjajo na ukaze programskega jezika:
+				<ol type="1">
+					<li>beri letnico x;
+					<li>pretvori niz v število;
+					<li>ugotovi, če je letnica x prestopno leto;
+					<li>piši rezultat;
+				</ol>
+		</ul>
+		<li><b>Diagram poteka</b>
+		<ul type="square">
+			<li>Diagram poteka je grafični strukturirani način predstavitve algoritma.
+			<li>Pridevnik "grafični" pomeni, da gre za risbo ali sliko.
+			<li>Stukturiranost diagrama poteka je odgovor na problem podajanja algoritma z besednim opisom problema in rešitve.
+			<li>Strukturiranost diagrama poteka pomeni, da so pomeni posameznih simbolov v diagramu natančno določeni in dogovorjeni.
+			<li>Strukturiranost diagrama poteka pomeni, da je potek reševanja problema v diagramu poteka natančno določen in dogovorjen.
+			<li><b>Primer "Prestopno leto":</b> Ukaze psevdokode zamenjajo simboli posameznih korakov algoritma
+			</br></br><IMG SRC="33prog02.jpg" ALT="?" BORDER=1></br></br>
+		</ul>
+		<li><b>Program (računalniški programi)</b>
+		<ul type="square">
+			<li>Računalniški programi so opisi reševanja problema v programskem jeziku.
+			<li>Programski jezik je v primerjavi s človeškimi jeziki veliko bolj natančno določen.
+			<li>Pomeni posameznih besed oziroma ukazov so tako natančno določeni, da ima vsak ukaz natanko en sam pomen.
+			<li>Veda, ki se ukvarja s pomeni simbolov v komunikaciji, se imenuje semantika.
+			<li>Pravila, po katerih pripisujemo pomene posameznim simbolom, imenujemo semantična pravila.
+			<li>Semantična pravila so pri programskih jezikih veliko bolj natančna in stroga kot pri človeških jezikih.
+			<li>Pravila sestavljanja stavkov v računalniških programih so tudi karseda natančna.
+			<li>Ta pravila skladnje stavkov imenujemo sintaksa.
+			<li>Sintaksa je pri programskih jezikih veliko bolj stroga kot pri človeških jezikih.
+			<li>Če se v stavek programa prikrade ena sama najmanjša nepaka, program ne bo deloval.
+			<li><b>Primer "Prestopno leto":</b> Problem opišemo kar s programom v programskem jeziku Java.
+			<ol type="1">
+				<li>prebrati leto in pretvoriti prebrano leto, ki je še niz, v število - to storimo z metodo "Integer.parseInt(spremenljivka)";</br></br><IMG SRC="33prog03.jpg" ALT="?" BORDER=1></br></br>
+				<li>preveriti ali so pogoji za prestopno leto izpolnjeni - to storimo z metodo "GregorianCalendar().isLeapYear()"</br></br><IMG SRC="33prog04.jpg" ALT="?" BORDER=1></br></br>
+				<li>sprejemanje odločitve, ali gre za prestopno leto - to storimo s stavkom "if-else"</br></br><IMG SRC="33prog05.jpg" ALT="?" BORDER=1></br></br>
+				<li>izpis rezultata z metodo "JOptionPane.showMessageDialog()"</br></br><IMG SRC="33prog06.jpg" ALT="?" BORDER=1></br></br>
+			</ol>
+		</ul>
+	</ol>
+</ol>
+
+<big>VAJA 33: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "PrestopnoLeto02". Pomagaj si s sliko.</br></br><IMG SRC="33prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="33koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek33.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek33.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+		<li><font color="red">Preriši diagram poteka v tej učni enoti v zvezek.</font>
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Naštej načine podajanja algoritmov?<br>
+2. Kateri način podajanja algoritmov je najmanj natančen in dopušča največ možnosti za nesporazum?<br>
+3. Kaj je psevdokoda?<br>
+4. Kaj pomeni predpona "psevdo"?<br>
+5. Kaj je diagram poteka?<br>
+6. Kaj je semantika?<br>
+7. Kaj je sintaksa?<br>
+8. Zapiši knjižnico, ki smo jo spoznali v vaji te učne enote.<br>
+9. Zapiši novo metodo, ki smo jo spoznali v tej učni enoti.<br>
+10. Koliko korakov vsebuje algoritem, ki smo ga obravnavali v tej učni enoti?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_5_pogojni-92455a38/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani - prvi vir.</A><br>
+<A HREF="http://up.fmf.uni-lj.si/java_0_programski_jeziki_splosno_osnove-ecb2eec1/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani - drugi vir.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

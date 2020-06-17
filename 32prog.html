@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>VRSTE ALGORITMOV (32)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>VRSTE ALGORITMOV (32)
+<p><em><font color="red">Kar v naglici storiš, dolgo časa obžaluješ.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>VRSTE ALGORITMOV</big>
+</center>
+
+<ol type="1">
+	<li>Poznamo več vrst algoritmov:
+	<ol type="1">
+		<li>Glede na način delovanja:
+		<ol type="1">
+			<li>Rekurzija ali ponavljanje (iteracija). Rekurzija je metoda, pri kateri algoritem vedno znova kliče samega sebe in se tako ponavlja, dokler ne pride do rešitve zadanega problema. Iteracija ali ponavljanje je metoda, ki ponavadi uporablja katero izmed zank.
+			<li>Nadzorovano logično sklepanje. Taki algoritmi so zaporedje logičnih odločitev.
+			<li>Zaporedni in vzporedni algoritmi. Zaporedni algoritmi so algoritmi, pri katerih se koraki izvajajo zaporedno. Pri vzporednih algoritmih pa se lahko več korakov izvaja hkrati. To omogočajo računalniki, ki vsebujejo več procesorjev.
+			<li>Deterministični in nedeterministični algoritmi. Deterministični algoritmi rešujejo probleme z natančnimi odločitvami na vsakem koraku izvajanja. Nedeterministični algoritmi rešujejo probleme z ugibanjem možnih rešitev. Ugibanje lahko postane bolj uspešno s pomočjo hevristike, vede, ki se ukvarja z reševanjem problemov.
+			<li>Natančni in približni algoritmi. Natančni algoritmi vedno pripeljejo do natančne rešitve. Približni algoritmi iščejo približke, ki so blizu točni rešitvi.  praksi je ravno tak pristop najbolj primeren za težke probleme.
+		</ol>
+		<li>Glede na zasnovo oziroma osnovno idejo:
+		<ol type="1">
+			<li>Deli in vladaj. To je drobljenje izhodiščnega problema na več manjših in lahko rešljivih problemov.
+			<li>Dinamično programiranje.
+			<li>Požrešna metoda
+			<li>Linearno programiranje
+			<li>Redukcija
+			<li>Probabilistični, genetski in hevristični algoritmi
+
+		</ol>
+		<li>Glede na področje uporabe:
+		<ul type="bullet">
+			<li>Vsako področje znanosti ima svoje značilne probleme, za katere obstojajo tudi značilne in uveljavljene rešitve. Povezane problemi na področju določene vede običajno obravnajo kot celoto. Metode reševanje teh skupin povezanih problemov so skupine ali razredi algoritmov. Primeri razredov algoritmov: algoritmi iskanja, algoritmi urejanja, algoritmi združevanja, algoritmi kombinacij, računski algoritmi, algoritmi stiskanja podatkov in tako naprej.
+		</ul>
+		<li>Glede na zapletenost:
+		<ul type="bullet">
+			<li>Algoritme lahko razvrščamo in razlikujemo glede na čas, ki je potreben za njihovo izvršitev, v primerjavi z obsegom vhodnih podatkov.
+		</ul>
+		<li>Glede na sposobnost računanja:
+		<ul type="bullet">
+			<li>Algoritmi se med seboj razlikujejo tudi v tem, koliko različnih tipičnih problemov ali situacij lahko z njimi učinkovito rešimo. Nekateri se ponašajo torej z manjšo močjo in sposobnostjo reševanja problemov, saj so primerni za manjše število problemov.
+		</ul>
+	</ol>
+	<li><b>Primer:</b>
+	<ol type="1">
+		<li><b>Predstavitev problema ali naloge:</b> Napiši program, ki prebere letnico ter ugotovi, ali je prebrano leto tudi prestopno leto.
+		<li><b>Analiza problema:</b> Vprašamo se, kaj vse bomo morali postoriti za rešitev problema.
+			<ol type="1">
+				<li>V tem primeru bomo morali prebrati eno število - letnico, za katero nas zanima, če je bilo to prestopno leto.
+				<li>Nato bomo morali ugotoviti, če je prebrano leto prestopno.
+				<li>Spomniti se moramo, kako ugotovimo, ali je leto prestopno.
+				<li>Leto je prestopno, če izpolnjuje dva pogoja, pri tem pa je prvi pogoj sestavljen iz dveh pogojev:
+				<ol type="1">
+					<li>Deljivo mora biti s 4 IN HKRATI ne sme biti deljivo s 100.
+					<li>ALI pa je deljivo s 400.
+				</ol>
+				<li>Izpisati moramo ugotovitev, ki je odvisna od rezultata preverjanja zgornjih pogojev. Obstojali bosta dve možnosti. Potrebna bo odločitev.
+				<li>
+			</ol>
+		<li><b>Drobitev na manjše probleme:</b> Manjši problemi, ki jih moramo v tem primeru rešiti	, so:
+			<ol type="1">
+				<li>prebrati letnico
+				<li>ugotoviti, če je leto prestopno
+				<li>na podlagi ugotovitve v prejšnji točki zapisati rezultat
+			</ol>
+		<li><b>Iskanje in oblikovanje rešitev za manjše probleme:</b>
+			<ol type="1">
+				<li>prebrati leto in pretvoriti prebrano leto, ki je še niz, v število - to storimo z metodo "Integer.parseInt(spremenljivka)";</br></br><IMG SRC="32prog02.jpg" ALT="?" BORDER=1></br></br>
+				<li>preveriti ali so pogoji za prestopno leto izpolnjeni</br></br><IMG SRC="32prog03.jpg" ALT="?" BORDER=1></br></br>
+				<li>izpisati ugotovitev, ki je odvisna od preverjanja prestopnosti leta; zato bosta obstojali dve možnosti; zato bo potrebna odločitev</br></br><IMG SRC="32prog04.jpg" ALT="?" BORDER=1></br></br>
+			</ol>
+		<li><b>Zaporedno izvajanje posameznih korakov algoritma: </b>zagon programa, ki ga napišemo s pomočjo algoritma.
+	</ol>
+</ol>
+
+<big>VAJA 32: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Switch". Pomagaj si s sliko.</br></br><IMG SRC="32prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="32koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek32.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek32.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je algoritem?<br>
+2. Naštej nekaj vrst algoritmov glede na način delovanja?<br>
+3. Naštej nekaj vrst algoritmov glede na zasnovo oziroma osnovno idejo.<br>
+4. Zapiši metodo, s katero pretvorimo v Javi niz v število.<br>
+5. Zapiši aritmetično operacijo in njen operator, ki smo ga uporabili v programu te učne enote.<br>
+6. Zapiši primerjalne opeacije in njihove operatorje, ki smo jih uporabili v programu te učne enote.<br>
+7. Zapiši logične funkcije in njihove operatorje, ki smo jih uporabili v programu te učne enote.<br>
+8. Zapiši, kateri pogojni stavek smo uporabili v programu te učne enote.<br>
+9. Zapiši knjižnico, ki smo jo uvozili v program te učne neote.<br>
+10. Zapiši metodo, ki smo jo v priemru te učne neote poklicali iz knjižnice?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_5_pogojni-92455a38/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani - prvi vir.</A><br>
+<A HREF="http://up.fmf.uni-lj.si/java_0_programski_jeziki_splosno_osnove-ecb2eec1/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani - drugi vir.</A><br>
+<A HREF="http://en.wikipedia.org/wiki/Algorithm">Angleška verzija Wikipedije</A>
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

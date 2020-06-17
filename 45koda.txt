@@ -1,0 +1,19 @@
+import javax.swing.*;
+
+class Odstotek {
+   public static void main(String[] args) {
+     double del, celota, odstotek;
+     Sting vnos;
+     
+     vnos = JOptionPane.showInputDialog(Vtipkaj vrednost števila, ki predstavlja delež:");
+     del = Integer.parseInt(vnos);
+     
+     vnos = JOptionPane.showInputDialog("Vtipkaj vrednost števila, ki predstavlja celoto:");
+     celota = Integer.parseInt(vnos)
+     
+     odstotek = (del/celota)*100;
+     
+     System.out.println("Število "+del+" predstavlja "+odstotek+"% števila "+celota+".");
+     JOptionPane.showMessageDialog(null, "Število "+del" predstavlja "+odstotek+"% števila "+celota+".");
+   }
+}

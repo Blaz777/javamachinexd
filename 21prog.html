@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>SWITCH (21)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>SWITCH (21)
+<p><em><font color="red">Človek lahko sam sebi prizadane večje gorje kot deset sovražnikov.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>SWITCH</big>
+</center>
+
+<ol type="1">
+	<li>Stavek "if" omogoča izvajanje enega želenega stavka ali bloka stavkov v primeru, ko je postavljeni pogoj izpolnjen.
+	<li>Stavek "if" omogoča izvajanje enega želenega stavka ali bloka stavkov v primeru, ko je postavljeni pogoj izpolnjen in drugega želenega stavka ali bloka stavkov v primeru, ko postavljeni pogoj ni izpolnjen.
+	<li>Stavek "switch" (preklop) omogoča izvršitev poljubnega števila želenih stavkov ali blokov stavkov v primeru, ko je eden izmed postavljenih izpolnjen.
+	<li>Vsakemu postavljenemu pogoju ustreza želeni stavek ali blok stavkov, ki se izvede, če je ta izbrani postavljeni pogoj izpolnjen.
+	<li>Primer:
+	<pre>
+	class Switch {
+	    public static void main(String[] args) {
+
+	        int mesec = 8;
+	        switch (mesec) {
+	            case 1:  System.out.println("Januar"); break;
+	            case 2:  System.out.println("Februar"); break;
+	            case 3:  System.out.println("Marec"); break;
+	            case 4:  System.out.println("April"); break;
+	            case 5:  System.out.println("Maj"); break;
+	            case 6:  System.out.println("Junij"); break;
+	            case 7:  System.out.println("Julij"); break;
+	            case 8:  System.out.println("Avgust"); break;
+	            case 9:  System.out.println("September"); break;
+	            case 10: System.out.println("Oktober"); break;
+	            case 11: System.out.println("November"); break;
+	            case 12: System.out.println("December"); break;
+	            default: System.out.println("Neveljavni mesec.");break;
+	        }
+	    }
+	}
+	</pre>
+	<li>Telo ukaza "Switch" imenujemo tudi blok switch.
+	<li>Vsak stavek, ki ga vsebuje switch blok, je označen z rezervirano besedo "case" (primer) in vrstno številko stavka.
+	<li>Vsak stavek "case" je zaključen z ukazom "break" (prekinitev).
+	<li>Izvajanje programa se po izvršitvi tistega stavka "case" v bloku "switch", katerega vrstna številka ustreza argumentu v klicu stavka "switch", nadaljuje s stavkom, ki sledi bloku "switch".
+	<li>V zgornjem primeru je argument  v klicu stavka "switch" številka 8 - zato se izvede stavek case 8.
+	<li>Če ukazi "break" ne bi zaključevali vseh stavkov case, bi se izvedli tudi vsi ostali stavki "case", ki sledijo tistemu, ki izpolnjuje postavljeni pogoj.
+	<li>V zgornjem primeru bi se poeg stavkov številka 8 izvedli še stavki 9, 10, 11, 12 in še "default" (privzeti stavek).
+</ol>
+
+<big>VAJA 21: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "Switch". Pomagaj si s sliko.</br></br><IMG SRC="21prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="21koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek21.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek21.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="21prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+
+<b>1. Vprašanja:</b><br>
+1. V čem se stavek "switch" bistveno razlikuje od stavkov "if" in "if-then"?<br>
+2. Kaj pomeni beseda "switch"?<br>
+3. Kaj pomeni beseda "case"?<br>
+4. Kaj pomeni beseda "break"?<br>
+5. Koliko različnih potekov izvajanja programa omogoča stavek "switch" v primeru v besedilu te učne enote?<br>
+6. Koliko različnih potekov izvajanja programa omogoča stavek "switch" v primeru v vaji te učne enote?<br>
+7. Kakšen je rezultat zagona programa v vaji te učne enote? Razloži, zakaj je tak rezultat.<br>
+8. Kakšen je rezultat zagona programa v vaji te učne enote, če prirediš spremenljivki "dan" vrednost 11? Razloži, zakaj je tak rezultat.<br>
+9. Kaj moraš storiti, da bo rezultat zagona programa v vaji te učne enote izpis "Ponedeljek"?<br>
+10. Kakšen rezultat vrne program v primeru v besedilu te učne enote? Zakaj je tak rezultat?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/java/nutsandbolts/switch.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

@@ -1,0 +1,30 @@
+import javax.swing.*;
+
+class Dvodimenzionalna {
+   public static void main(String[] args) {
+     String [] Prijatelj = new String[5][3];
+     String vnos = "nic";
+     int i, j;
+       
+     for(i=0; i<=4; i++){
+       for(j=0; j<=2; j++){
+          switch (j) {
+            case 0: vnos = JOptionPane.showInputDialog("Vtipkaj ime "+(i+1)+". prijateljice/prijatelja: "); break;
+            case 1: vnos = JOptionPane.showInputDialog("Vtipkaj priimek "+(i+1)+". prijateljice/prijatelja: "); break;
+            case 2: vnos = JOptionPane.showInputDialog("Vtipkaj kraj "+(i+1)+". prijateljice/prijatelja: "); break;
+                }
+          Prijatelj[i][j] = vnos
+          }
+       }
+     for(i=0; i<=4; i++){
+       for(j=0; j<=2; j+){
+          System.out.print(Prijatelj[i][j]+" ");
+          }
+       System.out.println;
+       }
+     
+   }
+}
+
+
+

@@ -1,0 +1,19 @@
+import javax.swing.*;
+
+class Enodimenzionalna {
+   public static vid main(String[] args) {
+     String [] Ime = new String[5];
+     String vnos;
+       
+     for(i=0; i<=4; i++){
+       vnos = JOptionPane.showInputDialog("Vtipkaj ime prijateljice ali prijatelja: ");
+       Ime[i] = vnos;
+       }
+
+     for(i=0; i<=4; i++)
+       System.out.println(i+1+". " +Ime[i]);
+       }
+     System.out.println("Tabela "Ime\" vsebuje "+Ime.length+" elementov!"); // izpis velikosti tabele
+     
+   }
+}

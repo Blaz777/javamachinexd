@@ -1,0 +1,14 @@
+class NiziMetode01 {
+  public static void main(String[] args) {  
+    String beseda = "pozornost";
+    System.out.println("1. Niz \"razumevanje\" vsebuje "+"razumevanje".length()+" znakov!"); 
+    System.out.println("2. Niz "+beseda+" vsebuje "+beseda.length()+" znakov!"); 
+    System.out.println("3. Na petem mestu niza \"razumevanje\" je znak "+"razumevanje".charAt(4)+"!"); 
+    System.out.println("4. Na tretjem mestu niza "+beseda " je znak "+beseda.charAt(2)+"!"); 
+    System.out.println("5. Niz \"razumevanje\" vsebuje podniz "+"razumevanje".substring(5,8)+"!"); 
+    System.out.println("6. Niz "+beseda+" vsebuje podniz "+beseda.substring(6)+"!"); 
+    System.out.println("7. Indeks zaèetka podniza \"um\" v nizu \"razumevanje\" je "+"razumevanje".indexOf("um")+"!"); 
+    System.out.println("8. Indeks zaèetka podniza \"nos\" v nizu "+beseda+" je "+beseda.indexOf("nos")+"!"); 
+    System.out.println("9. Indeks zaèetka podniza \"um\" v nizu "+beseda+" je "+beseda.indexOf("um")+"!"); 
+   } 
+}

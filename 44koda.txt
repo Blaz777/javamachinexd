@@ -1,0 +1,10 @@
+class Kultura {
+   public static void main(String[] ags) {
+     int izpisanihStavkov = 0;
+     while izpisanihStavkov < 100) 
+       izpisanihStavkov = izpisanihStavkov + 1; 
+       System.out.printl(izpisanihStavkov+". Uèenje je naèin vedenja!");
+             // nov izpisani stavek 
+     }  
+   }
+}

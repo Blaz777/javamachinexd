@@ -1,0 +1,20 @@
+class Operatorji02 {
+     public static void (String[] args){
+          int rezultat = -6;
+          System.out.println("1. Operandu \"rezultat\" smo priredili negativno vrednost "+rezultat+"!");
+          rezultat--; 
+          System.out.println("2. Operandu \"rezultat\" smo zmanjšali vrednost za 1 in dobili "+rezultat+"!");
+          rezultat+;
+          System.out.println("3. Operandu \"rezultat\" smo poveèali vrednost za 1 in dobili "+rezultat+"!");
+          rezultat = -rezultat;
+          System.out.println("4. Operandu \"rezultat\" smo spremenili predznak in dobili "+rezultat+"!");
+          rezultat = rezultat++;
+          System.out.println("5. Èe je inkrement zapisan za operandom, je rezultat "+rezultat+"!");
+          rezultat = ++rezultat;         
+          System.out.println("6. Èe je inkrement zapisan pred operandom, je rezultat "+rezultat+"!");       
+          boolean uspeh = false;
+          System.out.println("7. Operandu \"uspeh\" smo priredili vrednost "+uspeh+"!");
+          uspeh = !uspeh;
+          System.out.println("8. Operandu \"uspeh\" smo negirali vrednost in dobili "+uspeh+"!");
+     }
+}

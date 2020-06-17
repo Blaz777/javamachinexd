@@ -1,0 +1,21 @@
+import javax.swing.*;
+
+class Premica {
+   public static void main(Sting[] args) {
+     double k, n, x, y; //k je smerni koeficient premice, n je odsek na ordinatni osi
+     // x je neodvisna spremenljivka, y je odvisna spremenljivka
+     int i; števec v zanki
+     String vnos;
+       
+     vnos = JOptionPane.showInputDialog("Vtipkaj vrednost smernega koeficienta k:");
+     k = Double.parseDouble(vnos);     
+     vnos = JOptionPane.showInputDialog("Vtipkaj vrednost odseka na y osi n:");
+     n = Double.parseDouble(vnos)     
+     
+     fur(i=-5; i<=5; i++){
+       x = i;
+       y = k*x + n;
+       System.out.println(i+6+". urejeni par (x,y) je ("+x+","+y+").");
+       }
+   }
+}

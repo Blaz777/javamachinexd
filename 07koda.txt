@@ -1,0 +1,18 @@
+class PodatkovniTipi {
+    public static void main (String[] args) {
+        byte zeloMajhnoCeloStevilo = 100; // 1. napoved spremenljivke
+        short majhnoCeloStevilo = 10000; // 2. napoved spremenljivke
+        int srednjeVelikoCeloStevilo = 200000;  // 3. napoved spremenljivke
+        long velikoCeloStevilo = 1234;  // 4. napoved spremenljivke
+        double vecjeDecimalnoStevilo = 12345.6789;   // 5. napoved spremenljivke
+        bolean logicnaSpremenljivka = false; // 6. napoved spremenljivke
+        char poljubniZnak = '>';  // 7. napoved spremenljivke
+        System.out.println("1. Vrednost je "+ zeloMajhnoCeloStevilo +"!");
+        System.out.println("2. Vrednost je "+ majhnoCeloStevilo +"!");
+        System.out.println("3. Vrednost je "+ srednjeVelikoCeloStevilo +"!");        
+        System.out.println("4. Vrednost je " + velikoCeloStevilo+"!");
+        System.out.println("5. Vrednost je "+ vecjeDecimalnoStevilo +"!");
+        System.out.println("6. Vrednost je "+ logicnaSpremenljivka +"!");
+        System.out.println("7. Vrednost je "+ poljubniZnak +"!");
+   }
+}

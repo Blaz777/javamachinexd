@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>ZGRADBA PROGRAMA (2)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>ZGRADBA PROGRAMA V PROGRAMSKEM JEZIKU JAVA (2)
+<p><em><font color="red">Lahka mošnja, težko srce.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>OSNOVNI SESTAVNI DELI PROGRAMA V JAVI</big>
+</center>
+
+<ol type="1">
+	<li>Program "PrviPozdrav" v prejšnji učni enoti je sestavljen iz treh osnovnih gradnikov:
+	<ol type="1">
+		<li>Pojasnila izvorne kode.
+		<li>Opredelitev ali definicijo razreda "PrviPozdrav".
+		<li>Metodo "main".
+	</ol>
+	<li>Pojasnila izvorne kode imajo več nalog:
+	<ol type="1">
+		<li>Pomagajo programerju, ki je izvorno kodo zapisal, da se vedno znova spomni, kakšna je notranja logika delovanja programa in njegovih posameznih delov.
+		<li>Omogoča razumevanje delovanja programa tudi drugim programerjem, ki imajo vpogled v izvorno kodo.
+		<li>Pojasnila so označena tako, da jih prevajalnik pri prevajanju izvorne kode prezre.
+	</ol>
+	<li>Pojasnila izvorne kode so v Javi označena na tri načine:
+	<ol type="1">
+		<li>Večvrstično pojasnilo: /* pojasnilo */. Prevajalnik prezre vse znake, ki se nahajajo med oznakama /* in */.
+		<li>Enovrstično pojasnilo: // pojasnilo. Prevajalnik prezre vse znake, ki se nahajajo desno od oznake // in do konca iste vrstice.
+		<li>Pojasnilo dokumentacije: /** dokumentacija */. Prevajalnik prezre tudi ta pojasnila. Ta pojasnila so upoštevana, ko posebno orodje v okolju Java, ki se imenuje javadoc, samodejno pripravlja dokumentacijo za programe.
+	</ol>
+	<li>Osnovna oblika opredelitve ali definicije razreda je taka:
+	<pre>
+	class ImePrograma {
+		. . .
+	}
+	</pre>
+	<li>Opredelitev razreda začnemo s ključno besedo class, ki ji sledi ime tega razreda (ImePrograma v našem primeru zgoraj).
+	<li>Koda ali vsebina posameznega razreda je vključena med oba zavita oklepaja.
+	<li>Vsaka aplikacija ali vsak program v Javi se obvezno začne z opredelitvijo razreda.
+	<li>V programskem jeziku Java mora vsaka aplikacija ali program vsebovati metodo "main".
+	<li>Zapis metode "main" je sledeč:
+	<pre>
+
+	class DrugiPozdrav {
+	    public static void main(String[] args) {
+	        System.out.println("Izpis v programskem jeziku Java!"); //Prikaz izpisa.
+	    }
+	}
+	</pre>
+	<li>Zgradba metode "main" je sledeča:
+	<ol type="1">
+		<li><font color="red">public static</font> void main(String[] args). Označevalec "public static" je obvezna sestavina razreda.
+		<li>public static void main(String[] <font color="red">args</font>). Besedica "args" predstavlja argumente. Argumenti so podatki, ki jih naš razred potrebuje za svoje delovanje.
+		<li>public static void main(<font color="red">String[]</font> args). String[] je poseben tip spremenljivke, ki ga uporabljamo za delo z abecedo ali drugimi nabori znakov. Argument ali zunanji podatek, ki ga naš razred "DrugiPozdrav" potrebuje za svoje delovanje, je podatkovnega tipa String[] in je v našem primeru namenjen izpisu besedila.
+		<li>Vrstica "<font color="red">System.out.println("Izpis v programskem jeziku Java!");</font>" je eden od že obstoječih ali sistemskih razredov, ki jih vsebuje osnovna knjižnica. Naloga tega razreda je izpis argumenta v oklepajih. V našem primeru je argument v oklepajih stavek <font color="red">"Izpis v programskem jeziku Java!"</font>. To je besedilo, ki je spremenljivka tipa String[].
+		<li>Osnovna knjižnica je nabor programčkov, razredov, funkcij ali podprogramov, ki omogočajo osnovno delo v Javi.
+		<li>Osnovna knjižnica je pogosto označena s kratico API ("Application Programming Interface" ali vmesnik za programiranje aplikacij).
+	</ol>
+</ol>
+
+<center>
+<big>VAJA 2: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši zgornji program "DrugiPozdravPriimek".
+		<li>Kodo lahko tudi kopiraš iz <A HREF="02koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek02.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek02.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat. Če imaš težave pri izvedbi vaje, si pomagaj z navodili v prejšnji vaji.
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Katere tri osnovne gradnike lahko prepoznamo v programih, ki smo ju izdelali v tej in v prejšnji učni enoti?<br>
+2. Kaj je naloga pojasnil pri programiranju?<br>
+3. Zapiši vse tri vrste pojasnil v Javi in jim pripiši njihove oznake.<br>
+4. Ali prevajalnik upošteva pojasnila pri prevajanju izvorne kode ?<br>
+5. S katero ključno besedo začnemo opredelitev razreda?<br>
+6. Kako sta označena začetek in konec izvorne kode, ki jo vsebuje razred?<br>
+7. Kakšne spremenljivke predstavlja tip spremenljivke "String[]"?<br>
+8. Kaj pomeni besedica "args", ki jo vsebuje metoda "main"?<br>
+9. S katerimi znaki so označeni argumenti metode "main" in argumenti sistemskega razreda, ki smo ga spoznali v tej učni enoti?<br>
+10. Kaj je API?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/#uh2_1">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A> Oglej si prosojnice.<br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

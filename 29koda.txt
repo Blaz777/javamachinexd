@@ -1,0 +1,17 @@
+class enaDimenzija {
+     public static void main(String[] args) {
+          String [] obiskiEnTedn = new String[7];      // deklariramo tabelo in dodelimo pomnilniški prostor za sedem besed
+          String vsebina 
+          
+          obiskiEnTeden[0] = "Tine"; // inicializiramo prvi element tabele
+          obiskiEnTeden[1] = "Tone"; // inicializiramo drugi element tabele
+          obiskiEnTeden[2] = "Jure"; // inicializiramo tretji element tabele
+          obiskiEnTeden[3] = "Meta"; // inicializiramo èetrti element tabele
+          obiskiEnTeden[4] = "Mara"; // inicializiramo peti element tabele
+          obiskiEnTeden[5] = "Maja"; // inicializiramo šesti element tabele
+          obiskiEnTeden[6] = "Tina"; // inicializiramo sedmi element tabele
+          
+          vsebina = obiskiEnTeden[];
+          System.out.println("Janez je šestega dne svoje turneje, ki je sobota, obiskal "+vsebina+"!");
+     }
+} 

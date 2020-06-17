@@ -1,0 +1,23 @@
+import javax.swing.JOptonPane;
+
+class Primerjava { 
+   public static void main(String[] args)   {
+      int steva;
+      String niza, nizb;
+
+      niza = JOptionPane.showInputDialog             //1. korak: prebrati niza a in b
+              ("Vnesi prvo celo število: );      
+      nizb = JOptionPane.showInputDialog            
+               ("Vnesi drugo celo število: ");
+
+      steva = Integer.parseInt(niza);   //2. korak: pretvoriti niza a in b v števili a in b
+      stevb = Integer.parseInt(nizb);
+      
+      if (steva<stevb) JOptionPane.showMessageDialog       //3. in 4. korak: odloèanje in izpis
+                (null, "Število "+steva+" je manjše od števila "+stevb+"!");
+        else if (steva=stevb) JOptionPane.showMessageDialog                 
+                (null, "Število "+steva+" je enako številu "+stevb+"!");
+               else JOptionPane.showMessageDialog                 
+                (null, "Število "+steva+" je veèje od števila "+stevb+"!");
+    }
+}

@@ -1,0 +1,24 @@
+import javax.swing.*;             //zvezdica pomeni, da lahko iz te knjižnice 
+class PrestopnoLeto {       // klièemo vse funkcije, ki jih ta knjižnica vsebuje.
+    public static void main(String[] args)   {
+      int let;
+      boolean prestopno;
+      String beri, odgovor;
+
+      beri = JOptionPane.showInputDialog("Vpiši leto, ki te zanima: );
+      leto = Integer.parseInt(beri);
+
+      prestopno = (((leto % 4 == 0) && (leto % 100 != 0)) | (leto % 400 == 0));
+      //          (je deljivo s 4?) IN (ni deljivo s 100?)ALI(ni deljivo s 400?)
+      odgovor = "Leto " + leto;
+      if (prestopno) {
+         odgovor = odgovor + " je ";  // èe je vrednost spremenljivke "prestopno...
+      }                               // "true", zapišemo v odgovor besedico "je"
+      else  {
+         odgovor = odgovor + " ni ";  // èe je vrednost spremenljivke "prestopno...
+      }                               // "false", zapišemo v odgovor besedico "ni"
+      odgovor = odgovor + "prestopno leto!"
+      JOptionPane.showMessageDialog(null, odgovor,
+                        "Ali je leto prestopno?", JOptionPane.INFORMATION_MESSAGE);
+    }                   // Izpišimo odgovor v sporoèilnem oknu
+}

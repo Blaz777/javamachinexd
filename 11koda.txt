@@ -1,0 +1,17 @@
+class ZnakiInNizi {
+  public static void main(String[] args) {  
+    String niz;
+    char znak = 'c';
+    System.out.println("1. Koda znaka '!' je "+('!'+0)+"!");
+    System.out.println("2. Koda znaka '0' je "+('0'+0)+"!");
+    System.out.println("3. Koda znaka 'A' je "+('A'+0)+"!");
+    System.out.println("4. Koda znaka 'a' je "+('a'+0)+"!");
+    System.out.println("5. Koda znaka '"+znak+"' je "+('c'+0)+"!");
+    System.out.println("6. Èe kodi èrke 'a' prištejemo 2, dobimo kodo èrke 'c': "+('a'+2)+"!");
+    niz = "" + 'b' + 'e' + 's' + 'e' + 'd' + 'a';
+    System.out.print("7. Èe staknemo znake 'b', 'e', 's', 'e', 'd', 'a', ");
+    System.out.println("sestavimo besedo ""+niz+"\", ki je niz!");  
+    System.out.print("8. Niz \"nos\" lahko razstavimo na znake '"+"nos".charAt(0)+"', '");
+    System.out.println("nos".charAt(1)+"' in '"+"nos".charAt(2)+"'!" );
+   } 
+}

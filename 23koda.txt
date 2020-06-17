@@ -1,0 +1,15 @@
+class DoWhile {
+     public static void main(String[] args){
+          int stevec = 1;  //deklariranje in inicializacija števca
+          boolean pogoj; //deklariranje pogoja
+          pogoj = (stevec < 1);
+          do {
+               System.out.println("Števec znaša: "+stevec+"!")// Ob vsakem preletu zanke izpiše vrednost števca.
+               System.out.println("Vrednost postavljenega pogoja (stevec<1) znasa "+pogoj+"!");          
+               stevec++; //števec poveèamo za ena - inkrement
+          } wile (pogoj);
+          System.out.println("Zanka se je iztekla, števec je dosegel vrednost "+stevec+"!");
+          System.out.println("Vrednost postavljenega pogoja (stevec<1) znasa "+pogoj+"!");          
+     }
+}
+

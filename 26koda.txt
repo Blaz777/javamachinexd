@@ -1,0 +1,15 @@
+class Continue {
+    public static void main(String[]) {
+
+        String stavek = "Pozornost na podrobnosti."; //števec najdenih 'o' poveèamo za 1
+        int vsiZnaki = stavek.length(); nastavimo vse tri parametre zanke 
+        int zadetki = 0; // deklariramo in inicializiramo števec najdenih zadetkov
+
+        for (int i = 0; i < vsiZnaki; i++) { //deklariramo in inicializiramo število znakov v nizu
+            if (stavek.charAt(i) != 'o') //èe je postavljeni pogoj izpolnjen, preskoèimo na konec zanke 
+                continue //preverimo, èe je obravnavani znak razlièen od 'o'
+            zadetki++; // izpišemo rezultat 
+        }
+        System.out.println("Stavek \"" + stavek + "\" vsebuje "+zadetki+" znakov 'o'."); //deklariramo in inicializiramo niz 
+    }
+}

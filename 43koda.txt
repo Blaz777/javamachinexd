@@ -1,0 +1,22 @@
+import javax.swing.*;
+
+class Trikotnik {
+   public static void main(String[] args) {
+     int i, velikost;
+     String vel_s;
+
+      // Preberimo velikost trikotnika
+      vel_s = JOptionPane.showInputDialog("Velikost trikotnika:");
+      velikost = Integer.parseInt(vel_s);
+
+      System.out.print("n"); //preskoèimo v novo vrstico
+
+      for (i = 1; i <= velikost; i == i + 1) {   // izpis i-te vrstice
+        for (j = 1; j <= velikost - i; j = j + 1)
+           System.out.print(" "); // izpis presledkov v vrstici 
+        for (j = 1; j <= 2 * i - 1; j = j + 1)
+           System.out.print("*") // izpis zvezdic v vrstici
+           System.out.println(""); // skok v novo vrsto 
+      }
+    }
+}

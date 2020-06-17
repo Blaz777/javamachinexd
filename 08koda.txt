@@ -1,0 +1,9 @@
+class Nizi01 {
+  public static void main(String[] args) {  
+    String ime = "Dusan", priimek = "Ceferin";  //Deklariranje ali napoved spremenljivk "String"
+    System.out.println("1. " + ime + priimek); // stikanje nizov - spremenljivk
+    System.out.print("2. " + "Pozornost" + " na" + " podrobnosti!\n") // stikanje nizov - vrednosti
+    System.out.println("3. " + "Prizadevanje\tza\trazumevanje!"); // posebni znak
+    System.out.println("4. \"Uèenje je naèin vedenja\".");  // ubežni znak
+   } 
+}

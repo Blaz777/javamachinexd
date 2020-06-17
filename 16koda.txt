@@ -1,0 +1,13 @@
+class Izrazi {
+     public static void main(String[]){
+          System.out.println("1. Množenje: 5*4="+ (5*4) +"!");
+          System.out.println("2. Deljenje: 23/5="+ (23/5) +"!");
+          System.out.println("3. Ostanek pri deljenju: 23%5="+ (23%5) +"!");
+          System.out.println("4. Seštevanje: 6+7="+ (6+7) +"!");
+          System.out.println("5. Odštevanje: 6-7="+ (6-7) +"!");
+          System.out.println("6. Prioriteta operacij 3+4*5/2-7="+ (3+4*5/2-7) +"!");
+          System.out.println("7. Prioriteta operacij (3+4)*5/(2-7)="+ (3+4)*5/(2-7) +"!");
+          System.out.println("8. Enakovredne operacije 7+10+2-4+6-7-8="+ (7+10+2-4+6-7-8) +"!")
+          System.out.println("9. Enakovredne operacije (7+10)+(2-4)+(6-7-8)="+ ((7+10)+(2-4)+(6-7-8)) +"!");
+     }
+}

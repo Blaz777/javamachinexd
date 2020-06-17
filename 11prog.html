@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>ZNAKI (11)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>ZNAKI IN NJIHOVO RAZMERJE Z NIZI (11)
+<p><em><font color="red">Ljubi svojega soseda, a ograje ne podiraj.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>ZNAKI IN NJIHOVO RAZMERJE Z NIZI</big>
+</center>
+
+<ol type="1">
+	<li><b>Splošno o znakih:</b>
+	<ol type="1">
+		<li>Med znake uvrščamo vse črke, števke in številke in posebne znake. Števke so 0, 1, 2, 3, 4, 5, 6, 7, 8 in 9.
+		<li>Znaki imajo svoj podatkovni tip, ki ga pri napovedi spremeljivk navedemo kot "char".
+		<li>"char" je krajša oblika angleške besede "character", ki med ostalim pomeni tudi "znak".
+		<li>Znaki imajo lastno kodo, zato jih lahko primerjamo po velikosti in razvrščamo v vrstnem redu, v katerem nastopajo tudi v kodnih tabelah. Primer: kodo znakov lahko izpišemo z metodo System.out.println('a'); - ta stavek izpiše kodo, ki pripada mali črki a.
+		<li>Ker gre za kode znakov, lahko z znaki tudi računamo. Primer: (char)('a'+2) vrne vrednost 'c'.
+		<li>Vrednost znaka zapišemo tako, da jo obdamo z enojnim narekovajem. Primer: znak = 'a';.
+		<li>Vrednost niza zapišemo tako, da jo obdamo z dvojnim narekovajem. Primer: niz = "beseda";.
+		<li>Znak je sestav ni del niza. Niz je sestavljen iz znakov. Primer: niz "beseda" je sestavljen iz znakov 'b', 'e', 's', 'e', 'd' in 'a'.
+		<li>Znake lahko pretvorimo v nize, nize pa lahko pretvorimo v zaporedja znakov.
+	</ol>
+	<li><b>Pretvorba znakov v niz:</b>
+	<ol type="1">
+		<li>Znake pretvorimo v niz tako, da jih stikamo skupaj.
+		<li>Primer: znake 'b', 'e', 's', 'e', 'd' in 'a' staknemo skupaj in dobimo niz "beseda"
+		<li>Znake stikamo skupaj z operatorjem za stikanje nizov. To je znak"+".
+		<li>Primer: niz = "" + 'b' + 'e' + 's' + 'e' + 'd' + 'a';
+	</ol>
+	<li><b>Pretvorba niza v zaporedje znakov:</b>
+	<ol type="1">
+		<li>Niz pretvorimo v posamezne znake z metodo "niz.charAt(i)". "i" je indeks znaka, ki ga želimo izluščiti iz niza.
+		<li>Metodo "charAt()" smo spoznali že pri nizih.
+		<li>Primer: "nos".charAt(2) vrne znak 's', saj je na tretjem mestu besede "nos" znak "s". Ne smemo pozabiti, da se preštevanje znakov začne s številko 0 in zato je vrednost indeksa "i" na tretjem mestu enaka 2.
+		<pre>
+		0 1 <font color="red">2</font>
+		n o <font color="red">s</font>
+		</pre>
+		<li>Na enak način lahko izločimo tudi ostale znake v nizu, le ustrezen indeks zapišemo kot argument metode "charAt()".
+	</ol>
+	<li>
+</ol>
+
+<big>VAJA 11: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši program "ZnakiInNizi". Sledi navodilom na slikah.</br></br><IMG SRC="11prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="11koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek11.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek11.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="11prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. Kaj je niz in kaj je znak?<br>
+2. Zapiši v zvezek vse števke in nekaj posebnih znakov.<br>
+3. Zapiši podatkovna tipa in imeni spremenljivk, ki smo ju deklarirali v primeru v tej učni enoti.<br>
+4. Zapiši vse znake, ki so izpisani v primeru te učne enote, in vsakemu izmed njih pripiši njihovo kodo, ki jo prav tako najdeš v izpisu.<br>
+5. Kateri od naštetih naborov znakov ima najmanjše vrednosti kode: posebni znaki, števke, velike črke, male črke. Pomagaj si z odgovorom na prejšnje vprašanje ali pa s stavki v izpisu program te učne enote ki imajo vrstne številke od 1 do 5.<br>
+6. Kateri od naštetih naborov znakov ima največje vrednosti kode: posebni znaki, števke, velike črke, male črke. Pomagaj si z odgovorom na prejšnje vprašanje ali pa s stavki v izpisu programa te učne enote ki imajo vrstne številke od 1 do 5.<br>
+7. Razvrsti po vrsti naštete nabore znakov glede na velikost njihove kode in tudi njihov položaj v kodni tabeli?<br>
+8. Izračunaj, določi oziroma napovej vrednost kode za črko 'b' (mali b). Zapiši jo v zvezek.<br>
+9. Zapiši metodo, s katero razstavimo niz v posamezne znake, ki ga sestavljajo.<br>
+10. Zapiši operator, s katerim lahko staknemo znake v niz.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_8_string-ece5b4d0/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>

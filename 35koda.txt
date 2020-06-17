@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+
+class MejniVnos { 
+   public static void man(String[] args)   {
+      int steva, meja;
+      String niza;
+
+      niza = JOptionPane.showInputDialog             //1. korak: prebrati niz a
+              ("Vnesi celo število: ")      
+
+      steva = Integer.parseInt();   //2. korak: pretvoriti niz a v število a
+      
+      meja = 1000000;  //3. korak: doloèiti mejno vrednost vnosa
+      
+      if (steva<meja) JOptionPaneshowMessageDialog       //4. in 5. korak: odloèanje in izpis
+                (null, "Število "+steva+" izpolnjuje pogoj mejnega vnosa, saj je manjše od "+meja+"!");
+      else JOptionPane.showMessageDialog                
+                (null, "Število "+steva+" je veèje od mejne vrednosti "+meja+"!");
+    }
+}
+

@@ -1,0 +1,23 @@
+class Operatorji03 {
+     public static void main(String[] args){
+          int st1 = 3, st2 = 7;
+          char znak1 = G', znak2 = 'b';
+          boolean rezultat;
+          rezultat = (st1 = st2);
+          System.out.println("1. Ali sta operanda "+st1+" in "+st2+" enaka? Odgovor je: "+rezultat+"!");
+          rezultat = (st1 != st2);
+          System.out.println("2. Ali sta operanda "+st1+" in "+st2+" razlièna? Odgovor je: "+rezultat+"!");
+          rezultat = (st1 > st2);
+          System.out.println("3. Ali je operand "+st1+" veèji kot "+st2+"? Odgovor je: "+rezultat+"!");
+          rezultat = (st1 < st2);
+          System.out.println("4. Ali je operand "+st1+" manjši kot "+st2+"? Odgovor je: "+rezultat+"!");
+          rezultat = (st1 >= st2);
+          System.out.println("5. Ali je operand "+st1+" veèji ali enak kot "+st2+"? Odgovor je: "+rezultat+"!");
+          rezultat = (st1 <= st2);
+          System.out.println("6. Ali je operand "+st1+" manjši ali enak kot "+st2+"? Odgovor je: "+rezultat+"!");
+          rezultat = (znak1 == znak2);
+          System.out.println("7. Ali je operand "+znak1+" enak "+znak2+"? Odgovor je: "+rezultat+"!");
+          rezultat = (znak1 > znak2);
+          System.out.println("8. Ali je operand "+znak1+" veèji od "+znak2+"? Odgovor je: "+rezultat+"!");
+     }
+}

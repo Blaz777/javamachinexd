@@ -1,0 +1,11 @@
+ /*
+ * Aplikacija ali program PrviPozdrav izpiše
+ * stavek:"Moj prvi program v Javi!".
+ */
+
+class PrviPozdrav {
+    public static void main (String[] args) {
+        System.out.println("Moj prvi program v Javi!); //Prikaz izpisa.
+    }
+    
+}

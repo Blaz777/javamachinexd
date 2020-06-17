@@ -1,0 +1,15 @@
+import javax.swing;  //uvoz knjižnice, ki vsebuje metodo...
+                                 //... za vnos podatkov
+class Kocka { 
+   public static void main(String[] args)   
+          int met, konec, i;
+          String = JOptionPane.showInputDialog("Vnesi število metov: ");
+          konec = Integer.parseInt(VnesiStMet); //metoda pretvorbe niza v število
+          for(i=1; i<konec+1; i++){
+               met = (int) (6 * Mathrandom())+1; //metoda generiranja nakljuènega števila
+               System.out.print(i+". met: "); //metoda izpisa na zaslon
+               System.out.println("Tokrat je padla številka "+met+"!");
+          }
+          System.out.println("Metanje kocke je zakljuèeno.");      
+     }
+}

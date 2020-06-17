@@ -1,0 +1,93 @@
+<html>
+<head>
+<title>METODE NA NIZIH (10)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>METODE NA NIZIH (10)
+<p><em><font color="red">Pijača ne utopi skrbi, le zalije jih, da še hitreje rastejo.&nbsp;&nbsp;&nbsp;<small><sub>(pregovor)</sub></font> </em></small></p>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>METODE NA NIZIH - DRUGI DEL</big>
+</center>
+
+<ol type="1">
+	<li><b>Enostavno primerjanje nizov:</b>
+	<ol type="1">
+		<li>Metoda "niz1.equals(niz2)" omogoča ugotavljanje zgolj in samo enakosti oziroma neenakosti dveh nizov. Ta metoda razlikuje med velikimi in malimi črkami.
+		<li>Metoda "niz1.equalsIgnoreCase(niz2)" ne razlikuje med velikimi in malimi črkami.
+		<li>Metoda "niz1.equalsIgnoreCase(niz2)" vrne dve različni vrednosti:
+		<ol type="1">
+			<li>"true", če sta niz 1 in niz 2 enaka
+			<li>"false", če sta niz 1 in niz 2 različna
+		</ol>
+		<li>Primer1: Stavek "DUSAN".equalsIgnoreCase("dusan") vrne vrednost "true", saj ta metoda ne razlikuje med velikimi in malimi črkami. Med besedo "DUSAN" in "dusan" zato ne vidi razlike. Ti dve besedi sta za to metodo enaki.
+		<li>Primer1: Stavek "DUSAN".equals("dusan") vrne vrednost "false", saj ta metoda razlikuje med velikimi in malimi črkami. Med besedo "DUSAN" in "dusan" zato opazi razliko. Ti dve besedi sta za to metodo različni.
+	</ol>
+	<li><b>Natančno primerjanje nizov in razvrščanje po abecedi:</b>
+	<ol type="1">
+		<li>Metoda "niz1.compareTo(niz2)" omogoča ugotavljanje enakosti oziroma neenakosti dveh nizov, poleg tega pa še omogoča razvrščanje nizov po abecedi.
+		<li>Metoda "niz1.compareTo(niz2)" vrne tri različne vrednosti:
+		<ol type="1">
+			<li>0, če sta niz 1 in niz 2 enaka
+			<li>1, če je niz 1 večji od niza 2 - to pomeni, da je niz 1 po abecedi za nizom 2
+			<li>-1, če je niz 1 manjši od niza 2 - to pomeni, da je niz 1 po abecedi pred nizom 2
+		</ol>
+		<li>Primer1: Stavek "morala".compareTo("moramo") vrne vrednost 1.
+		<li>Prve štiri črke obeh besed so enake, peta črka besede "morala" (l) pa je po abecedi pred peto črko besede "moramo" (m). Beseda "morala" je zato po abecedi pred besedo "moramo" in je zato tudi manjša.
+		<li>
+	</ol>
+	<li><b>Pretvorba niza iz malih črk v velike črke:</b>
+	<ol type="1">
+		<li>Primer: Metoda "pozornost".toUpperCase() vrne vrednost "POZORNOST".
+	</ol>
+	<li><b>Pretvorba niza iz velikih črk v male črke:</b>
+	<ol type="1">
+		<li>Primer: Metoda "RAZUMEVANJE".toLowerCase() vrne vrednost "razumevanje".
+	</ol>
+</ol>
+
+<big>VAJA 10: </big>
+</center>
+
+	<ol type="1">
+		<li>V okolju za pisanje izvorne kode v jeziku Java, za prevajanje in za interaktivno delo zapiši program "NiziMetode02". Pomagaj si s sliko.</br></br><IMG SRC="10prog01.jpg" ALT="?" BORDER=1></br></br>
+		<li>Kodo lahko tudi kopiraš iz <A HREF="10koda.txt">te datoteke</A> in jo prilepiš v okolje, v katerem pišeš programčke. Pozor: koda, ki jo boš kopiral/a, vsebuje eno, dve, tri ali štiri napake. Če želiš, da bo program deloval, moraš napake odkriti in jih odpraviti.
+		<li>Izvorno kodo shrani pod imenom "ImePriimek10.java". ImePriimek je seveda tvoje lastno ime in priimek.
+		<li>Datoteko "ImePriimek10.java" prevedi.
+		<li>Prevedeno datoteko zaženi, preveri rezultat v interaktivnem oknu in pokliči profesorja, da vidi rezultat.</br></br><IMG SRC="10prog02.jpg" ALT="?" BORDER=1></br></br>
+	</ol>
+
+<b>1. Vprašanja:</b><br>
+1. V zvezek zapiši imena in tipe vseh spremenljivk, ki smo jih napovedali oziroma deklarirali v programu, ki predstavlja vajo v tej učni enoti.<br>
+2. Zapiši imena in vrednosti tistih spremenljivk, ki smo jih tudi inicializirali v programu, ki predstavlja vajo v tej učni enoti.<br>
+3. Katero metodo smo uporabili pri izpisu številka 1? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+4. Katero metodo smo uporabili pri izpisu številka 2? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+5. Katero metodo smo uporabili pri izpisu številka 3? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+6. Katero metodo smo uporabili pri izpisu številka 4? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+7. Katero metodo smo uporabili pri izpisu številka 5? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+8. Katero metodo smo uporabili pri izpisu številka 6? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+9. Katero metodo smo uporabili pri izpisu številka 7? Kakšen je rezultat? Zakaj je rezultat takšen?<br>
+10. Kakšna je naloga spremenljivk "rezultat" in "poAbecedi", ki smo jih deklarirali v našem zgledu?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Povezave do dodatnih informacij.</b><br>
+<A HREF="http://up.fmf.uni-lj.si/java_8_string-ece5b4d0/index.html">Gradiva na spletnih straneh fakultete za matematiko in fiziko v Ljubljani.</A><br>
+<A HREF="http://java.sun.com/docs/books/tutorial/index.html">Spletni priročnik proizvajalca programskega okolja Java. To je podjetje Sun.</A>
+
+</td>
+</table>
+
+<br><br><br>
+</body>
+</html>
